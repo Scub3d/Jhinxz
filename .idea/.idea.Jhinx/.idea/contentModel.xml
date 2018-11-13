@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\solys\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\solys\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Jhinx.1315523091.00" t="ExcludeRecursive" />
+    <e p="D:\Documents\GitHub\Jhinx" t="IncludeRecursive">
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Champion.cs" t="Include" />
+          <e p="CoroutineWithData.cs" t="Include" />
+          <e p="Game.cs" t="Include" />
+          <e p="League.cs" t="Include" />
+          <e p="Map.cs" t="Include" />
+          <e p="Match.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="ProfileIcon.cs" t="Include" />
+          <e p="Rune.cs" t="Include" />
+          <e p="RuneReforged.cs" t="Include" />
+          <e p="Stickers.cs" t="Include" />
+          <e p="SummonerSpell.cs" t="Include" />
+          <e p="Team.cs" t="Include" />
+          <e p="Tournament.cs" t="Include" />
+          <e p="Video.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Jhinx.csproj" t="IncludeRecursive" />
+      <e p="Jhinx.Editor.csproj" t="IncludeRecursive" />
+      <e p="Jhinx.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive">
+        <e p="com.unity.analytics" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Android" t="Include">
+              <e p="PostGenerateGradleAndroidProject.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="com.unity.package-manager-ui" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Resources" t="Include">
+              <e p="Styles" t="Include">
+                <e p="Main_Dark.uss" t="Include" />
+                <e p="Main_Light.uss" t="Include" />
+              </e>
+              <e p="Templates" t="Include">
+                <e p="Alert.uxml" t="Include" />
+                <e p="PackageAddFromUrlField.uxml" t="Include" />
+                <e p="PackageDetails.uxml" t="Include" />
+                <e p="PackageGroup.uxml" t="Include" />
+                <e p="PackageItem.uxml" t="Include" />
+                <e p="PackageList.uxml" t="Include" />
+                <e p="PackageManagerToolbar.uxml" t="Include" />
+                <e p="PackageManagerWindow.uxml" t="Include" />
+                <e p="PackageSearchToolbar.uxml" t="Include" />
+                <e p="PackageStatusBar.uxml" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="UnityVS_bin\Debug" t="ExcludeRecursive" />
+        <e p="UnityVS_obj\Debug" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

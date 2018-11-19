@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using SimpleJSON;
 using UnityEngine;
 using UnityEngine.Networking;
+// ReSharper disable All
 
 namespace Jhinx.Jinx {
     public class League {
@@ -17,9 +18,14 @@ namespace Jhinx.Jinx {
         public string UpdatedAt { get; set; }
         public Dictionary<string, string> Abouts  { get; set; }
         public Dictionary<string, string> Names { get; set; }
-        public List<string> Tournaments  { get; set; }
+        public List<string> TournamentIds  { get; set; }
         
-        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournaments) {
+        // Optional Extra. Lmao
+        public List<Tournament> Tournaments { get; set; }
+        public List<HighlandRecord> HighlandRecords { get; set; }
+        public List<Team> Teams { get; set; }
+        
+        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournamentIds) {
             Id = id;
             Slug = slug;
             Name = name;
@@ -31,7 +37,22 @@ namespace Jhinx.Jinx {
             UpdatedAt = updatedAt;
             Abouts = abouts;
             Names = names;
-            Tournaments = tournaments;
+            TournamentIds = tournamentIds;
+        }
+        
+        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournamentIds, List<Tournament> tournaments, List<HighlandRecord> highlandRecords, List<Team> teams) {
+            Id = id;
+            Slug = slug;
+            Name = name;
+            Guid = guid;
+            Region = region;
+            DrupalId = drupalId;
+            LogoURL = logoUrl;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+            Abouts = abouts;
+            Names = names;
+            TournamentIds = tournamentIds;
         }
         
         private static League parseLeagueJSON(JSONNode leagueJSON) {
@@ -46,8 +67,7 @@ namespace Jhinx.Jinx {
             }
             
             List<string> tournaments = new List<string>();
-            // Have to cast as JSONNode even though it is a string. Still works out
-            foreach(JSONNode tournamentId in leagueJSON["tournaments"].AsArray) {
+            foreach(JSONString tournamentId in leagueJSON["tournaments"].AsArray) {
                 tournaments.Add(tournamentId);
             }                
             
@@ -78,7 +98,29 @@ namespace Jhinx.Jinx {
                 }
             }
         }         
-        */   
+        */  
+       
+    }
 
+    public struct HighlandRecord {
+        public int Wins { get; set; }
+        public int Losses { get; set; }
+        public int Ties { get; set; }
+        public int Score { get; set; }
+        public string Roster { get; set; }
+        public string Tournament { get; set; }
+        public string Bracket { get; set; }
+        public string Id { get; set; }
+        
+        public HighlandRecord(int wins, int losses, int ties, int score, string roster, string tournament, string bracket, string id) {
+            Wins = wins;
+            Losses = losses;
+            Ties = ties;
+            Score = score;
+            Roster = roster;
+            Tournament = tournament;
+            Bracket = bracket;
+            Id = id;
+        }
     }
 }

@@ -91,6 +91,18 @@ namespace Jhinx.Chompers {
 			}
 		}
 		
+		public struct Var {
+			public string Link { get; set; }
+			public float Coeff { get; set; }
+			public string Key { get; set; }
+		
+			public Var(string link, float coeff, string key) {
+				Link = link;
+				Coeff = coeff;
+				Key = key;
+			}
+		}
+		
 		public static IEnumerator getLanguageRealmInfo(string realm) {
 			using (UnityWebRequest www = UnityWebRequest.Get("https://ddragon.leagueoflegends.com/realms/" + realm + ".json")) {
 				yield return www.Send();
@@ -213,6 +225,15 @@ namespace Jhinx.Chompers {
 			}
 			return listToReturn;
 		}
+		
+		public static Dictionary<string, float> parseStatsDictionaryJSON(JSONNode json) {
+			Dictionary<string, float> dictToReturn = new Dictionary<string, float>();
+			foreach (string key in json.Keys) {
+				dictToReturn.Add(key, json[key]);
+			}
+			return dictToReturn;
+		}
+		
 		
 		
 	}

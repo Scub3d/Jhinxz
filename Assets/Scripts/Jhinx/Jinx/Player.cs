@@ -1,13 +1,14 @@
 using System.Collections.Generic;
+// ReSharper disable All
 
-namespace APIv2 {
+namespace Jhinx.Jinx {
 	public class Player {
-		public int Id { get; }
-		public string FirstName { get; }
-		public string LastName { get; }
+		public int Id { get; set; }
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
 		public string Name { get; }
 		public string PhotoUrl { get; }
-		private string role, slug, region;
+		private string Role, Slug, Region;
 		public List<PlayerTournamentStats> TournamentStats { get; }
 		public List<PlayerTeam> Teams { get; }
 

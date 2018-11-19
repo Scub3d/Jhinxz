@@ -35,8 +35,8 @@ namespace Jhinx.Chompers {
 			H = image.H;
 		}
 
-		public static Image ParseImageJson(JSONNode stickerJSON) {
-			return new Image(stickerJSON["full"], stickerJSON["sprite"], stickerJSON["group"], stickerJSON["x"], stickerJSON["y"], stickerJSON["w"], stickerJSON["h"]);
+		public static Image ParseImageJson(JSONNode imageJSON) {
+			return new Image(imageJSON["full"], imageJSON["sprite"], imageJSON["group"], imageJSON["x"], imageJSON["y"], imageJSON["w"], imageJSON["h"]);
 		}
 	}
 }

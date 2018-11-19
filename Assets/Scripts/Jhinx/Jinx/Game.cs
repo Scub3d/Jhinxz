@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 // ReSharper disable All
 
-namespace APIv2 {
+namespace Jhinx.Jinx {
 	public class Game {
 		public string Id { get; }
 		public string Name { get; }
@@ -152,6 +152,106 @@ namespace APIv2 {
 	}
 
 	public struct GameParticipantStats {
+		public int Assists { get; }
+		public int ChampLevel { get; }
+		public int CombatPlayerScore { get; }
+		public int DamageDealtToObjectives { get; }
+		public int DamageDealtToTurrets { get; }
+		public int DamageSelfMitigated { get; }
+		public int Deaths { get; }
+		public int DoubleKills { get; }
+		public bool FirstBloodAssist { get; }
+		public bool FirstBloodKill { get; }
+		public bool FirstInhibitorAssist { get; }
+		public bool FirstInhibitorKill { get; }
+		public bool FirstTowerAssist { get; }
+		public bool FirstTowerKill { get; }
+		public int GoldEarned { get; }
+		public int GoldSpent { get; }
+		public int InhibitorKills { get; }
+		public int Item0 { get; }
+		public int Item1 { get; }
+		public int Item2 { get; }
+		public int Item3 { get; }
+		public int Item4 { get; }
+		public int Item5 { get; }
+		public int Item6 { get; }
+		public int KillingSprees { get; }
+		public int Kills { get; }
+		public int LargestCriticalStrike { get; }
+		public int LargestKillingSpree { get; }
+		public int LargestMultiKill { get; }
+		public int LongestTimeSpentLiving { get; }
+		public int MagicDamageDealt { get; }
+		public int MagicDamageDealtToChampions { get; }
+		public int MagicalDamageTaken { get; }
+		public int NeutralMinionsKilled { get; }
+		public int NeutralMinionsKilledEnemyJungle { get; }
+		public int NeutralMinionsKilledTeamJungle { get; }
+		public int ObjectivePlayerScore { get; }
+		public int PentaKills { get; }
+		public int Perk0 { get; }
+		public int Perk0Var1 { get; }
+		public int Perk0Var2 { get; }
+		public int Perk0Var3 { get; }
+		public int Perk1 { get; }
+		public int Perk1Var1 { get; }
+		public int Perk1Var2 { get; }
+		public int Perk1Var3 { get; }
+		public int Perk2 { get; }
+		public int Perk2Var1 { get; }
+		public int Perk2Var2 { get; }
+		public int Perk2Var3 { get; }
+		public int Perk3 { get; }
+		public int Perk3Var1 { get; }
+		public int Perk3Var2 { get; }
+		public int Perk3Var3 { get; }
+		public int Perk4 { get; }
+		public int Perk4Var1 { get; }
+		public int Perk4Var2 { get; }
+		public int Perk4Var3 { get; }
+		public int Perk5 { get; }
+		public int Perk5Var1 { get; }
+		public int Perk5Var2 { get; }
+		public int Perk5Var3 { get; }
+		public int PerkPrimaryStyle { get; }
+		public int PerkSubStyle { get; }
+		public int PhysicalDamageDealt { get; }
+		public int PhysicalDamageDealtToChampions { get; }
+		public int PhysicalDamageTaken { get; }
+		public int PlayerScore0 { get; }
+		public int PlayerScore1 { get; }
+		public int PlayerScore2 { get; }
+		public int PlayerScore3 { get; }
+		public int PlayerScore4 { get; }
+		public int PlayerScore5 { get; }
+		public int PlayerScore6 { get; }
+		public int PlayerScore7 { get; }
+		public int PlayerScore8 { get; }
+		public int PlayerScore9 { get; }
+		public int QuadraKills { get; }
+		public int SightWardsBoughtInGame { get; }
+		public int TimeCCingOthers { get; }
+		public int TotalDamageDealt { get; }
+		public int TotalDamageDealtToChampions { get; }
+		public int TotalDamageTaken { get; }
+		public int TotalHeal { get; }
+		public int TotalMinionsKilled { get; }
+		public int TotalPlayerScore { get; }
+		public int TotalScoreRank { get; }
+		public int TotalTimeCrowdControlDealt { get; }
+		public int TotalUnitsHealed { get; }
+		public int TripleKills { get; }
+		public int TrueDamageDealt { get; }
+		public int TrueDamageDealtToChampions { get; }
+		public int TrueDamageTaken { get; }
+		public int TurretKills { get; }
+		public int UnrealKills { get; }
+		public int VisionScore { get; }
+		public int VisionWardsBoughtInGame { get; }
+		public int WardsKilled { get; }
+		public int WardsPlaced { get; }
+		
 		public GameParticipantStats(int assists, int champLevel, int combatPlayerScore, int damageDealtToObjectives, int damageDealtToTurrets, int damageSelfMitigated, int deaths, int doubleKills, bool firstBloodAssist, bool firstBloodKill, bool firstInhibitorAssist, bool firstInhibitorKill, bool firstTowerAssist, bool firstTowerKill, int goldEarned, int goldSpent, int inhibitorKills, int item0, int item1, int item2, int item3, int item4, int item5, int item6, int killingSprees, int kills, int largestCriticalStrike, int largestKillingSpree, int largestMultiKill, int longestTimeSpentLiving, int magicDamageDealt, int magicDamageDealtToChampions, int magicalDamageTaken, int neutralMinionsKilled, int neutralMinionsKilledEnemyJungle, int neutralMinionsKilledTeamJungle, int objectivePlayerScore, int pentaKills, int perk0, int perk0Var1, int perk0Var2, int perk0Var3, int perk1, int perk1Var1, int perk1Var2, int perk1Var3, int perk2, int perk2Var1, int perk2Var2, int perk2Var3, int perk3, int perk3Var1, int perk3Var2, int perk3Var3, int perk4, int perk4Var1, int perk4Var2, int perk4Var3, int perk5, int perk5Var1, int perk5Var2, int perk5Var3, int perkPrimaryStyle, int perkSubStyle, int physicalDamageDealt, int physicalDamageDealtToChampions, int physicalDamageTaken, int playerScore0, int playerScore1, int playerScore2, int playerScore3, int playerScore4, int playerScore5, int playerScore6, int playerScore7, int playerScore8, int playerScore9, int quadraKills, int sightWardsBoughtInGame, int timeCCingOthers, int totalDamageDealt, int totalDamageDealtToChampions, int totalDamageTaken, int totalHeal, int totalMinionsKilled, int totalPlayerScore, int totalScoreRank, int totalTimeCrowdControlDealt, int totalUnitsHealed, int tripleKills, int trueDamageDealt, int trueDamageDealtToChampions, int trueDamageTaken, int turretKills, int unrealKills, int visionScore, int visionWardsBoughtInGame, int wardsKilled, int wardsPlaced) {
 			Assists = assists;
 			ChampLevel = champLevel;
@@ -253,105 +353,6 @@ namespace APIv2 {
 			WardsKilled = wardsKilled;
 			WardsPlaced = wardsPlaced;
 		}
-		public int Assists { get; }
-		public int ChampLevel { get; }
-		public int CombatPlayerScore { get; }
-		public int DamageDealtToObjectives { get; }
-		public int DamageDealtToTurrets { get; }
-		public int DamageSelfMitigated { get; }
-		public int Deaths { get; }
-		public int DoubleKills { get; }
-		public bool FirstBloodAssist { get; }
-		public bool FirstBloodKill { get; }
-		public bool FirstInhibitorAssist { get; }
-		public bool FirstInhibitorKill { get; }
-		public bool FirstTowerAssist { get; }
-		public bool FirstTowerKill { get; }
-		public int GoldEarned { get; }
-		public int GoldSpent { get; }
-		public int InhibitorKills { get; }
-		public int Item0 { get; }
-		public int Item1 { get; }
-		public int Item2 { get; }
-		public int Item3 { get; }
-		public int Item4 { get; }
-		public int Item5 { get; }
-		public int Item6 { get; }
-		public int KillingSprees { get; }
-		public int Kills { get; }
-		public int LargestCriticalStrike { get; }
-		public int LargestKillingSpree { get; }
-		public int LargestMultiKill { get; }
-		public int LongestTimeSpentLiving { get; }
-		public int MagicDamageDealt { get; }
-		public int MagicDamageDealtToChampions { get; }
-		public int MagicalDamageTaken { get; }
-		public int NeutralMinionsKilled { get; }
-		public int NeutralMinionsKilledEnemyJungle { get; }
-		public int NeutralMinionsKilledTeamJungle { get; }
-		public int ObjectivePlayerScore { get; }
-		public int PentaKills { get; }
-		public int Perk0 { get; }
-		public int Perk0Var1 { get; }
-		public int Perk0Var2 { get; }
-		public int Perk0Var3 { get; }
-		public int Perk1 { get; }
-		public int Perk1Var1 { get; }
-		public int Perk1Var2 { get; }
-		public int Perk1Var3 { get; }
-		public int Perk2 { get; }
-		public int Perk2Var1 { get; }
-		public int Perk2Var2 { get; }
-		public int Perk2Var3 { get; }
-		public int Perk3 { get; }
-		public int Perk3Var1 { get; }
-		public int Perk3Var2 { get; }
-		public int Perk3Var3 { get; }
-		public int Perk4 { get; }
-		public int Perk4Var1 { get; }
-		public int Perk4Var2 { get; }
-		public int Perk4Var3 { get; }
-		public int Perk5 { get; }
-		public int Perk5Var1 { get; }
-		public int Perk5Var2 { get; }
-		public int Perk5Var3 { get; }
-		public int PerkPrimaryStyle { get; }
-		public int PerkSubStyle { get; }
-		public int PhysicalDamageDealt { get; }
-		public int PhysicalDamageDealtToChampions { get; }
-		public int PhysicalDamageTaken { get; }
-		public int PlayerScore0 { get; }
-		public int PlayerScore1 { get; }
-		public int PlayerScore2 { get; }
-		public int PlayerScore3 { get; }
-		public int PlayerScore4 { get; }
-		public int PlayerScore5 { get; }
-		public int PlayerScore6 { get; }
-		public int PlayerScore7 { get; }
-		public int PlayerScore8 { get; }
-		public int PlayerScore9 { get; }
-		public int QuadraKills { get; }
-		public int SightWardsBoughtInGame { get; }
-		public int TimeCCingOthers { get; }
-		public int TotalDamageDealt { get; }
-		public int TotalDamageDealtToChampions { get; }
-		public int TotalDamageTaken { get; }
-		public int TotalHeal { get; }
-		public int TotalMinionsKilled { get; }
-		public int TotalPlayerScore { get; }
-		public int TotalScoreRank { get; }
-		public int TotalTimeCrowdControlDealt { get; }
-		public int TotalUnitsHealed { get; }
-		public int TripleKills { get; }
-		public int TrueDamageDealt { get; }
-		public int TrueDamageDealtToChampions { get; }
-		public int TrueDamageTaken { get; }
-		public int TurretKills { get; }
-		public int UnrealKills { get; }
-		public int VisionScore { get; }
-		public int VisionWardsBoughtInGame { get; }
-		public int WardsKilled { get; }
-		public int WardsPlaced { get; }
 	}
 
 	public struct GameTimelineFrame {

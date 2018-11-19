@@ -137,9 +137,9 @@ namespace Jhinx.Jhin {
 				effect.Add(Chompers.Chompers.parseFloatArrayJSON(effectArray));
 			}
 			
-			List<ChampionSpellVar> vars = new List<ChampionSpellVar>();
+			List<Chompers.Chompers.Var> vars = new List<Chompers.Chompers.Var>();
 			foreach (JSONNode varJSON in spellJSON["vars"]) {
-				vars.Add(new ChampionSpellVar(varJSON["link"], varJSON["coeff"], varJSON["key"]));
+				vars.Add(new Chompers.Chompers.Var(varJSON["link"], varJSON["coeff"], varJSON["key"]));
 			}
 			
 			Image image = Image.ParseImageJson(spellJSON["image"]);
@@ -286,7 +286,7 @@ namespace Jhinx.Jhin {
 		public string DataValues { get; set; } // Always null?
 		public List<List<float>> Effect { get; set; }
 		public List<string> EffectBurn { get; set; }
-		public List<ChampionSpellVar> Vars { get; set; }
+		public List<Chompers.Chompers.Var> Vars { get; set; }
 		public string CostType { get; set; }
 		public string MaxAmmo { get; set; }
 		public List<int> Range { get; set; }
@@ -294,7 +294,7 @@ namespace Jhinx.Jhin {
 		public Image Image { get; set; }
 		public string Resource { get; set; }
 
-		public ChampionSpell(string id, string name, string description, string tooltip, ChampionSpellLevelTip levelTip, int maxRank, List<int> cooldown, string cooldownBurn, List<int> cost, string costBurn, string dataValues, List<List<float>> effect, List<string> effectBurn, List<ChampionSpellVar> vars, string costType, string maxAmmo, List<int> range, string rangeBurn, Image image, string resource) {
+		public ChampionSpell(string id, string name, string description, string tooltip, ChampionSpellLevelTip levelTip, int maxRank, List<int> cooldown, string cooldownBurn, List<int> cost, string costBurn, string dataValues, List<List<float>> effect, List<string> effectBurn, List<Chompers.Chompers.Var> vars, string costType, string maxAmmo, List<int> range, string rangeBurn, Image image, string resource) {
 			Id = id;
 			Name = name;
 			Description = description;
@@ -325,18 +325,6 @@ namespace Jhinx.Jhin {
 		public ChampionSpellLevelTip(List<string> label, List<string> effect) {
 			Label = label;
 			Effect = effect;
-		}
-	}
-
-	public struct ChampionSpellVar {
-		public string Link { get; set; }
-		public float Coeff { get; set; }
-		public string Key { get; set; }
-		
-		public ChampionSpellVar(string link, float coeff, string key) {
-			Link = link;
-			Coeff = coeff;
-			Key = key;
 		}
 	}
 	

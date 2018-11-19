@@ -13,16 +13,17 @@
         <e p="Scripts" t="Include">
           <e p="Jhinx" t="Include">
             <e p="Chompers" t="Include">
+              <e p="Chompers.cs" t="Include" />
               <e p="CoroutineWithData.cs" t="Include" />
               <e p="Fetcher.cs" t="Include" />
               <e p="Image.cs" t="Include" />
             </e>
             <e p="Jhin" t="Include">
               <e p="Champion.cs" t="Include" />
+              <e p="Item.cs" t="Include" />
               <e p="Map.cs" t="Include" />
-              <e p="Masteries.cs" t="Include" />
               <e p="Mastery.cs" t="Include" />
-              <e p="MasteryTreeBranch.cs" t="Include" />
+              <e p="MissionAsset.cs" t="Include" />
               <e p="ProfileIcon.cs" t="Include" />
               <e p="Rune.cs" t="Include" />
               <e p="RuneReforged.cs" t="Include" />

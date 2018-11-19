@@ -1,5 +1,5 @@
 namespace Jhinx.Jinx {
-	public class Team {
+	public class ScheduleItem {
 		
 	}
 }

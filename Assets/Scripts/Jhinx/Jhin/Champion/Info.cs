@@ -1,4 +1,7 @@
 // ReSharper disable All
+
+using SimpleJSON;
+
 namespace Jhinx.Jhin.Champion {
 	public class Info {
 		public int Attack { get; set; }
@@ -11,6 +14,10 @@ namespace Jhinx.Jhin.Champion {
 			Defense = defense;
 			Magic = magic;
 			Difficulty = difficulty;
+		}
+
+		public static Info parseInfoJSON(JSONNode json) {
+			return new Info(json["attack"], json["defence"], json["magic"], json["difficulty"]);
 		}
 	}
 }

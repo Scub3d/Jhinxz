@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using SimpleJSON;
+
 // ReSharper disable All
 
 namespace Jhinx.Jhin.Champion {
@@ -27,6 +29,16 @@ namespace Jhinx.Jhin.Champion {
 			UseObviousCheckmark = useObviousCheckmark;
 			CustomPanel = customPanel;
 			Blocks = blocks;
+		}
+
+		public static Recommended parseRecommendedJSON(JSONNode json) {
+			List<Block> blocks = Block.parseBlocksJSON(json["blocks"]);
+			
+			return new Recommended(json["recommended"]["champion"], 
+				json["recommended"]["title"], json["recommended"]["map"], json["recommended"]["mode"], 
+				json["recommended"]["type"], json["recommended"]["customTag"], json["recommended"]["sortrank"], 
+				json["recommended"]["extensionPage"], json["recommended"]["useObviousCheckmark"], 
+				json["recommended"]["customPanel"], blocks);
 		}
 	}
 }

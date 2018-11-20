@@ -1,4 +1,7 @@
 // ReSharper disable All
+
+using SimpleJSON;
+
 namespace Jhinx.Jhin.Champion {
 	public class Stats {
 		public float Hp { get; set; }
@@ -41,6 +44,14 @@ namespace Jhinx.Jhin.Champion {
 			AttackDamage = attackDamage;
 			AttackDamagePerLevel = attackDamagePerLevel;
 			AttackSpeedPerLevel = attackSpeedPerLevel;
+		}
+		
+		public static Stats parseStatsJSON(JSONNode statsJSON) {
+			return new Stats(statsJSON["hp"], statsJSON["hpperlevel"], statsJSON["mp"], statsJSON["mpperlevel"], 
+				statsJSON["movespeed"], statsJSON["armor"], statsJSON["armorperlevel"], statsJSON["spellblock"],
+				statsJSON["spellblockperlevel"], statsJSON["attackrange"], statsJSON["hpregen"], statsJSON["hpregenperlevel"],
+				statsJSON["mpregen"], statsJSON["mpregenperlevel"], statsJSON["crit"], statsJSON["critperlevel"], 
+				statsJSON["attackdamage"], statsJSON["attackdamageperlevel"], statsJSON["attackspeedperlevel"]);
 		}
 	}
 }

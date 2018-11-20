@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinx.Jhin {
+namespace Jhinx.Jhin.MissionAsset {
 	public class MissionAsset {
 		public string MissionId { get; set; }
 		public int Id { get; set; }

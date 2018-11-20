@@ -5,11 +5,9 @@ using Jhinx.Chompers;
 using SimpleJSON;
 using UnityEngine;
 using UnityEngine.Networking;
+// ReSharper disable All
 
-namespace Jhinx.Jhin {
-	[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_SimpleTypes")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_Elsewhere")]
+namespace Jhinx.Jhin.ProfileIcon {
 	public class ProfileIcon {
 		public int Id { get; set; }
 		public Image Image { get; set; }
@@ -23,6 +21,15 @@ namespace Jhinx.Jhin {
 			Image image = new Image(Chompers.Image.ParseImageJson(profileIconJSON["image"]));
 			return new ProfileIcon(profileIconJSON["id"], image);
 		}
+
+		private static List<ProfileIcon> parseProfileIconsJSON(JSONNode json) {
+			List<ProfileIcon> profileIcons = new List<ProfileIcon>();
+			foreach (JSONNode profileIconJSON in json) {
+				profileIcons.Add(parseProfileIconJSON(profileIconJSON));
+			}
+
+			return profileIcons;
+		}
 		
 		public static IEnumerator getProfileIcons(string patchNumber, string languageCode) {
 			using (UnityWebRequest www = UnityWebRequest.Get("https://ddragon.leagueoflegends.com/cdn/" + patchNumber + "/data/" + languageCode + "/profileicon.json")) {
@@ -31,11 +38,8 @@ namespace Jhinx.Jhin {
 					Debug.Log(www.error);
 					yield return null;
 				} else {
-					List<ProfileIcon> profileIcons = new List<ProfileIcon>();
 					JSONNode profileIconsJSON = JSON.Parse(www.downloadHandler.text)["data"];
-					foreach (JSONNode profileIconJSON in profileIconsJSON) {
-						profileIcons.Add(parseProfileIconJSON(profileIconJSON));
-					}
+					List<ProfileIcon> profileIcons = parseProfileIconsJSON(profileIconsJSON);
 					yield return profileIcons;                       
 				}
 			}

@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 // ReSharper disable All
 
-namespace Jhinx.Jhin {
+namespace Jhinx.Jhin.Map {
 	public class Map {
 		public int MapName { get; set; }
 		public int MapId { get; set; }

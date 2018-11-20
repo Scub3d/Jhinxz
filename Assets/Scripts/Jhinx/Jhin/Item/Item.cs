@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinx.Jhin {
+namespace Jhinx.Jhin.Item {
 	public class Item {
 		public int Id { get; set; }
 		public string Name { get; set; }
@@ -59,24 +59,13 @@ namespace Jhinx.Jhin {
 		
 		
 		private static Item parseItemJSON(JSONNode itemJSON) {
-			List<string> from = new List<string>();
-			foreach (JSONString fromId in itemJSON["from"]) {
-				from.Add(fromId.Value);
-			}
-			
-			List<string> into = new List<string>();
-			foreach (JSONString intoId in itemJSON["into"]) {
-				into.Add(intoId.Value);
-			}
-			
+			List<string> from = Chompers.Chompers.parseStringArrayJSON(itemJSON["from"].AsArray);
+			List<string> into = Chompers.Chompers.parseStringArrayJSON(itemJSON["into"].AsArray);
 			Image image = new Image(Chompers.Image.ParseImageJson(itemJSON["image"]));
-			Gold gold = new Gold(itemJSON["gold"]["base"], itemJSON["gold"]["purchasable"], itemJSON["gold"]["total"], itemJSON["gold"]["sell"]);
+			Gold gold = Gold.parseGoldJSON(itemJSON["gold"]);
+			List<string> tags = Chompers.Chompers.parseStringArrayJSON(itemJSON["tags"].AsArray);
 			
-			List<string> tags = new List<string>();
-			foreach (JSONString tag in itemJSON["tags"]) {
-				tags.Add(tag.Value);
-			}
-			
+			// TODO: fix below
 			Dictionary<string, bool> maps = new Dictionary<string, bool>();
 			foreach (string key in itemJSON["maps"].Keys) {
 				maps.Add(key, itemJSON["maps"][key]);
@@ -86,6 +75,7 @@ namespace Jhinx.Jhin {
 			foreach (string key in itemJSON["stats"].Keys) {
 				stats.Add(key, itemJSON["stats"][key]);
 			}
+			// TODO: fix above
 
 			return new Item(itemJSON["id"], itemJSON["name"], itemJSON["description"], itemJSON["collaq"], itemJSON["plaintext"],
 				itemJSON["group"], itemJSON["consumed"], itemJSON["stacks"], itemJSON["depth"], itemJSON["consumeOnFull"],
@@ -109,19 +99,5 @@ namespace Jhinx.Jhin {
 				}
 			}
 		}		
-	}
-
-	public struct Gold {
-		public int Base { get; set; }
-		public bool Purchasable { get; set; }
-		public int Total { get; set; }
-		public int Sell { get; set; }
-		
-		public Gold(int @base, bool purchasable, int total, int sell) {
-			Base = @base;
-			Purchasable = purchasable;
-			Total = total;
-			Sell = sell;
-		}
 	}
 }

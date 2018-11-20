@@ -55,27 +55,38 @@ namespace Jhinx.Jhin {
 			Resource = resource;
 		}
 		
-		private static SummonerSpell parseSummonerSpellJSON(JSONNode summonerSpellJSON) {
-			Chompers.Image image = Image.ParseImageJson(summonerSpellJSON["image"]);
+		private static SummonerSpell parseSummonerSpellJSON(JSONNode json) {
+			Chompers.Image image = Image.ParseImageJson(json["image"]);
 			
+			// TODO: Fix below
 			List<List<float>> effect = new List<List<float>>();
-			foreach (JSONArray effectArray in summonerSpellJSON["effect"].AsArray) {
+			foreach (JSONArray effectArray in json["effect"].AsArray) {
 				effect.Add(Chompers.Chompers.parseFloatArrayJSON(effectArray));
 			}
 			
 			List<Chompers.Chompers.Var> vars = new List<Chompers.Chompers.Var>();
-			foreach (JSONNode varJSON in summonerSpellJSON["vars"]) {
+			foreach (JSONNode varJSON in json["vars"]) {
 				vars.Add(new Chompers.Chompers.Var(varJSON["link"], varJSON["coeff"], varJSON["key"]));
 			}
+			// TODO: Fix above
 			
-			return new SummonerSpell(summonerSpellJSON["id"], summonerSpellJSON["name"], summonerSpellJSON["description"],
-				summonerSpellJSON["tooltip"], summonerSpellJSON["maxrank"], Chompers.Chompers.parseIntArrayJSON(summonerSpellJSON["cooldown"].AsArray), 
-				summonerSpellJSON["cooldownBurn"], Chompers.Chompers.parseIntArrayJSON(summonerSpellJSON["cost"].AsArray), 
-				summonerSpellJSON["costBurn"], summonerSpellJSON["dataValues"], effect, 
-				Chompers.Chompers.parseStringArrayJSON(summonerSpellJSON["effectBurn"].AsArray), vars, summonerSpellJSON["key"], 
-				Chompers.Chompers.parseStringArrayJSON(summonerSpellJSON["modes"].AsArray), summonerSpellJSON["costType"], 
-				summonerSpellJSON["maxAmmo"], Chompers.Chompers.parseIntArrayJSON(summonerSpellJSON["range"].AsArray), 
-				summonerSpellJSON["rangeBurn"], image, summonerSpellJSON["resource"]);
+			return new SummonerSpell(json["id"], json["name"], json["description"],
+				json["tooltip"], json["maxrank"], Chompers.Chompers.parseIntArrayJSON(json["cooldown"].AsArray), 
+				json["cooldownBurn"], Chompers.Chompers.parseIntArrayJSON(json["cost"].AsArray), 
+				json["costBurn"], json["dataValues"], effect, 
+				Chompers.Chompers.parseStringArrayJSON(json["effectBurn"].AsArray), vars, json["key"], 
+				Chompers.Chompers.parseStringArrayJSON(json["modes"].AsArray), json["costType"], 
+				json["maxAmmo"], Chompers.Chompers.parseIntArrayJSON(json["range"].AsArray), 
+				json["rangeBurn"], image, json["resource"]);
+		}
+
+		private static List<SummonerSpell> parseSummonerSpellsJSON(JSONNode json) {
+			List<SummonerSpell> summonerSpells = new List<SummonerSpell>();
+			foreach (JSONNode summonerSpellJSON in json) {
+				summonerSpells.Add(parseSummonerSpellJSON(summonerSpellJSON));
+			}
+
+			return summonerSpells;
 		}
 
 		public static IEnumerator getSummonerSpells(string patchNumber, string languageCode) {
@@ -86,12 +97,7 @@ namespace Jhinx.Jhin {
 					yield return null;
 				} else {
 					JSONNode summonerSpellsJSON = JSON.Parse(www.downloadHandler.text);
-
-					List<SummonerSpell> summonerSpells = new List<SummonerSpell>();
-					foreach (JSONNode summonerSpellJSON in summonerSpellsJSON["data"]) {
-						summonerSpells.Add(parseSummonerSpellJSON(summonerSpellJSON));
-					}
-
+					List<SummonerSpell> summonerSpells = parseSummonerSpellsJSON(summonerSpellsJSON["data"]);
 					yield return summonerSpells;
 				}
 			}

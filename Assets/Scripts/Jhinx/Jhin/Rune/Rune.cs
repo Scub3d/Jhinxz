@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinx.Jhin {
+namespace Jhinx.Jhin.Rune {
 	public class Rune {
 		public int Id { get; set; }
 		public string Name { get; set; }
@@ -33,10 +33,19 @@ namespace Jhinx.Jhin {
 		
 		private static Rune parseRuneJSON(JSONNode runeJSON, int runeId) {
 			Chompers.Image image = Image.ParseImageJson(runeJSON["image"]);
-			
+		
 			return new Rune(runeId, runeJSON["name"], image, runeJSON["tier"], runeJSON["type"], 
 				Chompers.Chompers.parseStatsDictionaryJSON(runeJSON["stats"]), 
 				Chompers.Chompers.parseStringArrayJSON(runeJSON["tags"].AsArray), runeJSON["colloq"], runeJSON["plaintext"]);
+		}
+
+		private static List<Rune> parseRunesJSON(JSONNode json) {
+			List<Rune> runes = new List<Rune>();
+			foreach (string runeId in json.Keys) {
+				runes.Add(parseRuneJSON(json[runeId], int.Parse(runeId)));
+			}
+
+			return runes;
 		}
 
 		public static IEnumerator getRunes(string patchNumber, string languageCode) {
@@ -47,12 +56,7 @@ namespace Jhinx.Jhin {
 					yield return null;
 				} else {
 					JSONNode runesJSON = JSON.Parse(www.downloadHandler.text);
-
-					List<Rune> runes = new List<Rune>();
-					foreach (string runeId in runesJSON["data"].Keys) {
-						runes.Add(parseRuneJSON(runesJSON["data"][runeId], int.Parse(runeId)));
-					}
-
+					List<Rune> runes = parseRunesJSON(runesJSON["data"]);
 					yield return runes;
 				}
 			}

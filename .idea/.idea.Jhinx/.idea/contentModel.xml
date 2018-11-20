@@ -31,18 +31,44 @@
                 <e p="Spell.cs" t="Include" />
                 <e p="Stats.cs" t="Include" />
               </e>
-              <e p="Item.cs" t="Include" />
-              <e p="Map.cs" t="Include" />
-              <e p="Mastery.cs" t="Include" />
-              <e p="MissionAsset.cs" t="Include" />
-              <e p="ProfileIcon.cs" t="Include" />
-              <e p="Rune.cs" t="Include" />
-              <e p="RuneReforged.cs" t="Include" />
-              <e p="Sticker.cs" t="Include" />
-              <e p="SummonerSpell.cs" t="Include" />
+              <e p="Item" t="Include">
+                <e p="Gold.cs" t="Include" />
+                <e p="Item.cs" t="Include" />
+              </e>
+              <e p="Map" t="Include">
+                <e p="Map.cs" t="Include" />
+              </e>
+              <e p="Mastery" t="Include">
+                <e p="Branch.cs" t="Include" />
+                <e p="Entry.cs" t="Include" />
+                <e p="Masteries.cs" t="Include" />
+                <e p="Mastery.cs" t="Include" />
+                <e p="Tree.cs" t="Include" />
+              </e>
+              <e p="MissionAsset" t="Include">
+                <e p="MissionAsset.cs" t="Include" />
+              </e>
+              <e p="ProfileIcon" t="Include">
+                <e p="ProfileIcon.cs" t="Include" />
+              </e>
+              <e p="Rune" t="Include">
+                <e p="Rune.cs" t="Include" />
+              </e>
+              <e p="RuneReforged" t="Include">
+                <e p="Rune.cs" t="Include" />
+                <e p="RuneReforged.cs" t="Include" />
+              </e>
+              <e p="Sticker" t="Include">
+                <e p="Sticker.cs" t="Include" />
+              </e>
+              <e p="SummonerSpell" t="Include">
+                <e p="SummonerSpell.cs" t="Include" />
+              </e>
             </e>
             <e p="Jinx" t="Include">
-              <e p="Article.cs" t="Include" />
+              <e p="Actor" t="Include">
+                <e p="Article.cs" t="Include" />
+              </e>
               <e p="Game" t="Include">
                 <e p="Ban.cs" t="Include" />
                 <e p="Event.cs" t="Include" />
@@ -59,25 +85,38 @@
                 <e p="Team.cs" t="Include" />
                 <e p="Timeline.cs" t="Include" />
               </e>
-              <e p="HtmlBlock.cs" t="Include" />
+              <e p="HtmlBlock" t="Include">
+                <e p="HtmlBlock.cs" t="Include" />
+              </e>
               <e p="League" t="Include">
                 <e p="League.cs" t="Include" />
               </e>
-              <e p="Marquees.cs" t="Include" />
+              <e p="Marquees" t="Include">
+                <e p="Marquees.cs" t="Include" />
+              </e>
               <e p="Match" t="Include">
                 <e p="Match.cs" t="Include" />
               </e>
               <e p="Player" t="Include">
                 <e p="Player.cs" t="Include" />
+                <e p="StatsHistory.cs" t="Include" />
               </e>
-              <e p="ScheduleItem.cs" t="Include" />
+              <e p="ScheduleItem" t="Include">
+                <e p="ScheduleItem.cs" t="Include" />
+              </e>
+              <e p="StreamGroup" t="Include">
+                <e p="StreamGroup.cs" t="Include" />
+              </e>
               <e p="Team" t="Include">
                 <e p="Team.cs" t="Include" />
               </e>
               <e p="Tournament" t="Include">
+                <e p="PlayerStat.cs" t="Include" />
                 <e p="Tournament.cs" t="Include" />
               </e>
-              <e p="Video.cs" t="Include" />
+              <e p="Video" t="Include">
+                <e p="Video.cs" t="Include" />
+              </e>
             </e>
             <e p="Test.cs" t="Include" />
           </e>

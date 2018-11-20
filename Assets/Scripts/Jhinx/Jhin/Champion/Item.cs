@@ -1,4 +1,8 @@
 // ReSharper disable All
+
+using System.Collections.Generic;
+using SimpleJSON;
+
 namespace Jhinx.Jhin.Champion {
 	public class Item {
 		public string Id { get; set; }
@@ -9,6 +13,18 @@ namespace Jhinx.Jhin.Champion {
 			Id = id;
 			Count = count;
 			HideCount = hideCount;
+		}
+
+		public static Item parseItemJSON(JSONNode json) {
+			return new Item(json["id"], json["count"], json["hideCount"]);
+		}
+
+		public static List<Item> parseItemsJSON(JSONNode json) {
+			List<Item> items = new List<Item>();
+			foreach (JSONNode itemJSON in json) {
+				items.Add(parseItemJSON(itemJSON));
+			}
+			return items;
 		}
 	}
 }

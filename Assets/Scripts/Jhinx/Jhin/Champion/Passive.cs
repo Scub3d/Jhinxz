@@ -1,4 +1,6 @@
 using Jhinx.Chompers;
+using SimpleJSON;
+
 // ReSharper disable All
 
 namespace Jhinx.Jhin.Champion {
@@ -11,6 +13,10 @@ namespace Jhinx.Jhin.Champion {
 			Name = name;
 			Description = description;
 			Image = image;
+		}
+
+		public static Passive parsePassiveJSON(JSONNode json) {
+			return new Passive(json["name"], json["description"], Image.ParseImageJson(json["image"]));
 		}
 	}
 }

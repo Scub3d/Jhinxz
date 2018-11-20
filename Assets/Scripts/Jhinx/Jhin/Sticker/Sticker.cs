@@ -5,11 +5,9 @@ using Jhinx.Chompers;
 using SimpleJSON;
 using UnityEngine;
 using UnityEngine.Networking;
+// ReSharper disable All
 
-namespace Jhinx.Jhin {
-	[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_SimpleTypes")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_Elsewhere")]
+namespace Jhinx.Jhin.Sticker {
 	public class Sticker {
 		public int Id { get; set; }
 		public Image Image { get; set; }
@@ -19,9 +17,18 @@ namespace Jhinx.Jhin {
 			Image = image;
 		}
 		
-		private static Sticker parseStickerJSON(JSONNode stickerJSON) {
-			Image image = new Image(Chompers.Image.ParseImageJson(stickerJSON["image"]));
-			return new Sticker(stickerJSON["id"], image);
+		private static Sticker parseStickerJSON(JSONNode json) {
+			Image image = new Image(Chompers.Image.ParseImageJson(json["image"]));
+			return new Sticker(json["id"], image);
+		}
+
+		private static List<Sticker> parseStickersJSON(JSONNode json) {
+			List<Sticker> stickers = new List<Sticker>();
+			foreach (JSONNode stickerJSON in json) {
+				stickers.Add(parseStickerJSON(stickerJSON));
+			}
+
+			return stickers;
 		}
 
 		public static IEnumerator getStickers(string patchNumber, string languageCode) {
@@ -31,11 +38,8 @@ namespace Jhinx.Jhin {
 					Debug.Log(www.error);
 					yield return null;
 				} else {
-					List<Sticker> stickers = new List<Sticker>();
 					JSONNode stickersJSON = JSON.Parse(www.downloadHandler.text)["data"];
-					foreach (JSONNode stickerJSON in stickersJSON) {
-						stickers.Add(parseStickerJSON(stickerJSON));
-					}
+					List<Sticker> stickers = parseStickersJSON(stickersJSON);
 					yield return stickers;                       
 				}
 			}

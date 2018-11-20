@@ -2,17 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a46174fd-c7b8-4f97-975e-75787caf44ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Ban.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Ban.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Event.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Event.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Frame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Frame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameTimline.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameTimline.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Mastery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Mastery.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Participant.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Participant.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Rune.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Rune.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Stats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Stats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Team.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Team.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Timeline.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Timeline.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Match.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jhinx/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jhinx/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jhinx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jhinx/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/SummonerSpell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/SummonerSpell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameStats.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League/League.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League/League.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Match.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Match/Match.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Match.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Match/Match.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team/Team.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team/Team.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament/Tournament.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament/Tournament.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,85 +109,204 @@
     <session id="1759929487">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4975" />
+          <entry key="cs" value="7083" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4975" />
+          <entry key="C#" value="7083" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="50" />
+          <entry key="cs" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="50" />
+          <entry key="C#" value="98" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <marker date="1542514941383" expanded="true" signature="76:17740" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="97:1116" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="770:1113" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="1142:2703" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="2101:2700" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="2732:2920" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="2850:2917" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="2953:4272" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="3829:4269" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="4312:4347" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="4385:4417" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="4458:5640" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="5273:5637" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="5678:14620" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="11208:14617" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="14655:15071" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="14960:15068" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="15111:16762" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="16144:16759" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="16814:17738" ph="{...}" />
-                <marker date="1542514941383" expanded="true" signature="17383:17735" ph="{...}" />
+                <marker date="1542697516131" expanded="false" signature="6:148" ph="..." />
+                <marker date="1542697516131" expanded="true" signature="206:16817" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="231:9594" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="1274:1603" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="1775:1948" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="2017:4903" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="2197:2308" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="2980:3037" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="3388:4113" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="3533:3648" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="4981:5524" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="5604:6142" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="6218:7578" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="6584:6658" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="6787:6885" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="7672:8294" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="7830:8290" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="7908:7966" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="8158:8227" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="8382:9001" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="8544:8997" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="8622:8680" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="8872:8934" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9105:9589" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9282:9585" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9360:9418" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9624:9905" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9833:9902" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="9935:10248" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="10152:10245" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="10280:11994" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="11432:11991" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="12025:13723" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="13269:13720" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="13763:13971" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="13925:13968" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="14005:14265" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="14193:14262" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="14302:15275" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="14999:15272" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="15317:16520" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="16140:16517" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="16566:16815" ph="{...}" />
+                <marker date="1542697516131" expanded="true" signature="16751:16812" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697485191" expanded="true" signature="30:61" ph="{...}" />
+                <marker date="1542697485191" expanded="true" signature="52:59" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding>
+                <marker date="1542697463498" expanded="true" signature="30:60" ph="{...}" />
+                <marker date="1542697463498" expanded="true" signature="51:58" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516163" expanded="true" signature="30:67" ph="{...}" />
+                <marker date="1542697516163" expanded="true" signature="58:65" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516211" expanded="true" signature="30:63" ph="{...}" />
+                <marker date="1542697516211" expanded="true" signature="54:61" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516200" expanded="true" signature="30:64" ph="{...}" />
+                <marker date="1542697516200" expanded="true" signature="55:62" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516176" expanded="true" signature="30:60" ph="{...}" />
+                <marker date="1542697516176" expanded="true" signature="51:58" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516188" expanded="true" signature="30:60" ph="{...}" />
+                <marker date="1542697516188" expanded="true" signature="51:58" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <folding>
+                <marker date="1542697516146" expanded="true" signature="30:61" ph="{...}" />
+                <marker date="1542697516146" expanded="true" signature="52:59" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
               <folding>
-                <marker date="1542643540598" expanded="false" signature="6:126" ph="..." />
-                <marker date="1542643540598" expanded="true" signature="174:3775" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="200:3773" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="1091:1456" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="1533:2576" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="1693:1796" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="1965:2064" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="2219:2281" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="2636:3136" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="2760:3126" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="2862:2962" ph="{...}" />
-                <marker date="1542643540598" expanded="true" signature="3155:3763" ph="/* public static IEnumerator getLeague(System.Action&lt;League&gt; callback, int leagueId) { ... */" />
+                <marker date="1542697511813" expanded="true" signature="30:61" ph="{...}" />
+                <marker date="1542697511813" expanded="true" signature="52:59" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -141,36 +317,67 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>vars</find>
+      <find>this.</find>
+      <find>{ get; }</find>
     </findStrings>
+    <replaceStrings>
+      <replace>{ get; set; }</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Timeline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Fetcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantFrame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Rune.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Marquees.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Mastery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Participant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Ban.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Article.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Sticker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Team.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Frame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team/Team.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League/League.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/ScheduleItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Video.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Mastery.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament/Tournament.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/SummonerSpell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Map.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/ProfileIcon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Fetcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Sticker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameTimline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/HtmlBlock.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Match.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tournament.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/League.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Stickers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs" />
@@ -186,8 +393,42 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/ScheduleItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/HtmlBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Article.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Marquees.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Mastery.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Rune.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Event.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantFrame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Frame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameTimline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Ban.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Team.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Participant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Timeline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs" />
       </list>
     </option>
   </component>
@@ -198,7 +439,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
   </component>
@@ -210,6 +451,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -252,16 +497,20 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Jhinx" type="1045f7f1:UnityExplorerNode" />
+              <item name="Jhin" type="1045f7f1:UnityExplorerNode" />
+              <item name="Champion" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Jhinx" type="1045f7f1:UnityExplorerNode" />
               <item name="Jinx" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -312,11 +561,13 @@
       <workItem from="1542084172526" duration="266000" />
       <workItem from="1542129223939" duration="12382000" />
       <workItem from="1542512149597" duration="3471000" />
+      <workItem from="1542648777005" duration="4622000" />
+      <workItem from="1542688284241" duration="3233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16119000" />
+    <option name="totallyTimeSpent" value="23974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,7 +582,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114605546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,24 +608,24 @@
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25273523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Unity" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="NuGet" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -402,15 +653,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20460">
-          <caret line="1364" column="1" selection-start-line="1364" selection-start-column="1" selection-end-line="1364" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tournament.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CoroutineWithData.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Match.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/League.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Stickers.cs" />
@@ -441,34 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="64" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="64" />
-          <folding>
-            <marker date="1542141914556" expanded="false" signature="6:187" ph="..." />
-            <marker date="1542141914556" expanded="true" signature="421:1458" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="527:562" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="630:765" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="848:1452" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="1005:1448" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="1083:1141" ph="{...}" />
-            <marker date="1542141914556" expanded="true" signature="1327:1386" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Video.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <marker date="1542144291880" expanded="true" signature="6:165" ph="..." />
-            <marker date="1542144291880" expanded="true" signature="188:1927" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="397:1925" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="883:1068" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="1129:1344" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="1425:1913" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="1484:1909" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="1562:1620" ph="{...}" />
-            <marker date="1542144291880" expanded="true" signature="1796:1849" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -476,83 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <marker date="1542150807655" expanded="false" signature="6:148" ph="..." />
-            <marker date="1542150807655" expanded="true" signature="197:3547" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="226:431" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="381:428" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="456:2856" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="787:906" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="972:1347" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="1091:1133" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="1420:2052" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="1538:2019" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="1688:1953" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="1817:1916" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2136:2853" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2293:2849" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2371:2429" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2694:2754" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2886:3021" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="2989:3018" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="3056:3298" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="3252:3295" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="3341:3545" ph="{...}" />
-            <marker date="1542150807655" expanded="true" signature="3491:3542" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
-          <folding>
-            <marker date="1542384701139" expanded="false" signature="6:148" ph="..." />
-            <marker date="1542384701139" expanded="true" signature="197:16808" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="222:9585" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="1265:1594" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="1766:1939" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="2008:4894" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="2188:2299" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="2971:3028" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="3379:4104" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="3524:3639" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="4972:5515" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="5595:6133" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="6209:7569" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="6575:6649" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="6778:6876" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="7663:8285" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="7821:8281" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="7899:7957" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="8149:8218" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="8373:8992" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="8535:8988" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="8613:8671" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="8863:8925" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9096:9580" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9273:9576" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9351:9409" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9615:9896" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9824:9893" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="9926:10239" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="10143:10236" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="10271:11985" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="11423:11982" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="12016:13714" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="13260:13711" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="13754:13962" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="13916:13959" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="13996:14256" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="14184:14253" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="14293:15266" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="14990:15263" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="15308:16511" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="16131:16508" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="16557:16806" ph="{...}" />
-            <marker date="1542384701139" expanded="true" signature="16742:16803" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,18 +697,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="772">
           <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1943" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Team/Team.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Video.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Tournament/Tournament.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/ScheduleItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/HtmlBlock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League/League.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Article.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Marquees.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Player/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding>
-            <marker date="1542512974617" expanded="true" signature="6:148" ph="..." />
-            <marker date="1542512974617" expanded="true" signature="197:4163" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="227:4161" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="1495:1954" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="2040:3425" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="2251:2325" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="2462:2560" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="3514:4158" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="3672:4154" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="3750:3808" ph="{...}" />
-            <marker date="1542512974617" expanded="true" signature="4031:4108" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="88:1487" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="111:889" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="626:886" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="929:1267" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="1296:1350" ph="{...}" />
+            <marker date="1542688323397" expanded="true" signature="1408:1485" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -579,7 +807,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Map.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
+          <caret line="41" column="9" selection-start-line="21" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
           <folding>
             <marker date="1542313986608" expanded="false" signature="6:187" ph="..." />
             <marker date="1542313986608" expanded="true" signature="235:1327" ph="{...}" />
@@ -594,185 +822,329 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/MissionAsset.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentities.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantFrame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <marker date="1542696556918" expanded="true" signature="51:1048" ph="{...}" />
+            <marker date="1542696556918" expanded="true" signature="84:1046" ph="{...}" />
+            <marker date="1542696556918" expanded="true" signature="691:1043" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Team.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <marker date="1542696648071" expanded="true" signature="86:1650" ph="{...}" />
+            <marker date="1542696648071" expanded="true" signature="107:1648" ph="{...}" />
+            <marker date="1542696648071" expanded="true" signature="1136:1645" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Rune.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <marker date="1542689162324" expanded="true" signature="51:231" ph="{...}" />
+            <marker date="1542689162324" expanded="true" signature="72:229" ph="{...}" />
+            <marker date="1542689162324" expanded="true" signature="182:226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Ban.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1542696616344" expanded="true" signature="51:253" ph="{...}" />
+            <marker date="1542696616344" expanded="true" signature="71:251" ph="{...}" />
+            <marker date="1542696616344" expanded="true" signature="191:248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Event.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="31" />
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
-            <marker date="1542513561309" expanded="false" signature="6:148" ph="..." />
-            <marker date="1542513561309" expanded="true" signature="197:1483" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="226:1481" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="397:458" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="557:716" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="797:1478" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="960:1474" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="1038:1096" ph="{...}" />
-            <marker date="1542513561309" expanded="true" signature="1306:1407" ph="{...}" />
+            <marker date="1542696459190" expanded="true" signature="86:1844" ph="{...}" />
+            <marker date="1542696459190" expanded="true" signature="108:1842" ph="{...}" />
+            <marker date="1542696459190" expanded="true" signature="1224:1839" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Chompers.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Frame.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1943">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
-            <marker date="1542384674111" expanded="false" signature="6:126" ph="..." />
-            <marker date="1542384674111" expanded="true" signature="178:7938" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="203:7936" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="335:849" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="447:845" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="525:583" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="768:805" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="900:1420" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1012:1416" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1090:1148" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1336:1375" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1506:2162" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1660:2158" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="1738:1796" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="2027:2113" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="2187:2851" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="2484:2847" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="2875:3100" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3039:3096" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3167:3637" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3287:3633" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3365:3423" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3510:3583" ph="/* Convert ... */" />
-            <marker date="1542384674111" expanded="true" signature="3686:4046" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3786:4042" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="3864:3922" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="4139:4237" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="4326:4432" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="4522:4627" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="4715:4820" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="4901:4985" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5065:5148" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5230:5317" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5401:5488" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5576:5667" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5749:5834" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="5915:5999" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6083:6170" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6248:6334" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6418:6510" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6592:6683" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6767:6854" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="6926:6989" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7058:7218" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7149:7190" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7282:7430" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7367:7402" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7498:7650" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7587:7622" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7736:7924" ph="{...}" />
-            <marker date="1542384674111" expanded="true" signature="7852:7896" ph="{...}" />
+            <marker date="1542696566201" expanded="true" signature="86:461" ph="{...}" />
+            <marker date="1542696566201" expanded="true" signature="108:459" ph="{...}" />
+            <marker date="1542696566201" expanded="true" signature="348:456" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Chompers/Image.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameTimline.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="42" />
+        <state relative-caret-position="90">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding>
-            <marker date="1542384025125" expanded="false" signature="6:131" ph="..." />
-            <marker date="1542384025125" expanded="true" signature="183:1001" ph="{...}" />
-            <marker date="1542384025125" expanded="true" signature="205:999" ph="{...}" />
-            <marker date="1542384025125" expanded="true" signature="517:616" ph="{...}" />
-            <marker date="1542384025125" expanded="true" signature="646:787" ph="{...}" />
-            <marker date="1542384025125" expanded="true" signature="846:996" ph="{...}" />
+            <marker date="1542696599100" expanded="true" signature="86:324" ph="{...}" />
+            <marker date="1542696599100" expanded="true" signature="114:322" ph="{...}" />
+            <marker date="1542696599100" expanded="true" signature="260:319" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/RuneReforged.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Mastery.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="3" selection-start-column="8" selection-end-line="9" selection-end-column="9" />
           <folding>
-            <marker date="1542514376155" expanded="true" signature="6:126" ph="..." />
-            <marker date="1542514376155" expanded="true" signature="174:2478" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="203:2001" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="505:586" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="669:1266" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="809:1117" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="931:1090" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="1354:1998" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="1517:1994" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="1595:1653" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="1875:1949" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="2035:2476" ph="{...}" />
-            <marker date="1542514376155" expanded="true" signature="2360:2473" ph="{...}" />
+            <marker date="1542689142332" expanded="true" signature="51:243" ph="{...}" />
+            <marker date="1542689142332" expanded="true" signature="75:241" ph="{...}" />
+            <marker date="1542689142332" expanded="true" signature="191:238" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Rune.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Participant.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="315">
+          <caret line="21" column="257" selection-start-line="21" selection-start-column="257" selection-end-line="21" selection-end-column="257" />
           <folding>
-            <marker date="1542513630232" expanded="false" signature="6:148" ph="..." />
-            <marker date="1542513630232" expanded="true" signature="197:2034" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="218:2032" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="757:920" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="991:1338" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="1418:2005" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="1572:2001" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="1650:1708" ph="{...}" />
-            <marker date="1542513630232" expanded="true" signature="1878:1964" ph="{...}" />
+            <marker date="1542696711019" expanded="true" signature="86:1311" ph="{...}" />
+            <marker date="1542696711019" expanded="true" signature="114:1309" ph="{...}" />
+            <marker date="1542696711019" expanded="true" signature="936:1306" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Stats.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="-22">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
           <folding>
-            <marker date="1542514941383" expanded="true" signature="76:17740" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="97:1116" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="770:1113" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="1142:2703" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="2101:2700" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="2732:2920" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="2850:2917" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="2953:4272" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="3829:4269" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="4312:4347" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="4385:4417" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="4458:5640" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="5273:5637" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="5678:14620" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="11208:14617" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="14655:15071" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="14960:15068" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="15111:16762" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="16144:16759" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="16814:17738" ph="{...}" />
-            <marker date="1542514941383" expanded="true" signature="17383:17735" ph="{...}" />
+            <marker date="1542696795856" expanded="true" signature="51:9497" ph="{...}" />
+            <marker date="1542696795856" expanded="true" signature="73:9495" ph="{...}" />
+            <marker date="1542696795856" expanded="true" signature="6083:9492" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/League.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Timeline.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
-            <marker date="1542643540598" expanded="false" signature="6:126" ph="..." />
-            <marker date="1542643540598" expanded="true" signature="174:3775" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="200:3773" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="1091:1456" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="1533:2576" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="1693:1796" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="1965:2064" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="2219:2281" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="2636:3136" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="2760:3126" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="2862:2962" ph="{...}" />
-            <marker date="1542643540598" expanded="true" signature="3155:3763" ph="/* public static IEnumerator getLeague(System.Action&lt;League&gt; callback, int leagueId) { ... */" />
+            <marker date="1542696837577" expanded="true" signature="86:1315" ph="{...}" />
+            <marker date="1542696837577" expanded="true" signature="111:1313" ph="{...}" />
+            <marker date="1542696837577" expanded="true" signature="946:1310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <marker date="1542696964216" expanded="true" signature="51:287" ph="{...}" />
+            <marker date="1542696964216" expanded="true" signature="74:285" ph="{...}" />
+            <marker date="1542696964216" expanded="true" signature="215:282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/ParticipantIdentity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1542696987162" expanded="true" signature="51:297" ph="{...}" />
+            <marker date="1542696987162" expanded="true" signature="87:295" ph="{...}" />
+            <marker date="1542696987162" expanded="true" signature="233:292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jinx/Game/GameStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <marker date="1542697006997" expanded="true" signature="86:1098" ph="{...}" />
+            <marker date="1542697006997" expanded="true" signature="112:1096" ph="{...}" />
+            <marker date="1542697006997" expanded="true" signature="810:1093" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Champion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516131" expanded="false" signature="6:148" ph="..." />
+            <marker date="1542697516131" expanded="true" signature="206:16817" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="231:9594" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="1274:1603" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="1775:1948" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="2017:4903" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="2197:2308" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="2980:3037" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="3388:4113" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="3533:3648" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="4981:5524" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="5604:6142" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="6218:7578" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="6584:6658" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="6787:6885" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="7672:8294" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="7830:8290" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="7908:7966" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="8158:8227" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="8382:9001" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="8544:8997" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="8622:8680" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="8872:8934" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9105:9589" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9282:9585" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9360:9418" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9624:9905" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9833:9902" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="9935:10248" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="10152:10245" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="10280:11994" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="11432:11991" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="12025:13723" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="13269:13720" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="13763:13971" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="13925:13968" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="14005:14265" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="14193:14262" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="14302:15275" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="14999:15272" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="15317:16520" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="16140:16517" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="16566:16815" ph="{...}" />
+            <marker date="1542697516131" expanded="true" signature="16751:16812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Block.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697485191" expanded="true" signature="30:61" ph="{...}" />
+            <marker date="1542697485191" expanded="true" signature="52:59" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Item.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <marker date="1542697463498" expanded="true" signature="30:60" ph="{...}" />
+            <marker date="1542697463498" expanded="true" signature="51:58" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Recommended.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516163" expanded="true" signature="30:67" ph="{...}" />
+            <marker date="1542697516163" expanded="true" signature="58:65" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Passive.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516211" expanded="true" signature="30:63" ph="{...}" />
+            <marker date="1542697516211" expanded="true" signature="54:61" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/LevelTip.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516200" expanded="true" signature="30:64" ph="{...}" />
+            <marker date="1542697516200" expanded="true" signature="55:62" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Skin.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516176" expanded="true" signature="30:60" ph="{...}" />
+            <marker date="1542697516176" expanded="true" signature="51:58" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Info.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516188" expanded="true" signature="30:60" ph="{...}" />
+            <marker date="1542697516188" expanded="true" signature="51:58" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Stats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697516146" expanded="true" signature="30:61" ph="{...}" />
+            <marker date="1542697516146" expanded="true" signature="52:59" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Jhinx/Jhin/Champion/Spell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <marker date="1542697511813" expanded="true" signature="30:61" ph="{...}" />
+            <marker date="1542697511813" expanded="true" signature="52:59" ph="{...}" />
           </folding>
         </state>
       </provider>

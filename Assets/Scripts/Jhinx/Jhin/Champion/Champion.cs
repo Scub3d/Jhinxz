@@ -7,25 +7,25 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinx.Jhin {
+namespace Jhinx.Jhin.Champion {
 	public class Champion {
 		public string Id { get; set; }
 		public string Key { get; set; }
 		public string Name { get; set; }
 		public string Title { get; set; }
 		public Image Image { get; set; }
-		public List<ChampionSkin> Skins { get; set; }
+		public List<Skin> Skins { get; set; }
 		public string Lore { get; set; }
 		public string Blurb { get; set; }
 		public List<string> AllyTips { get; set; }
 		public List<string> EnemyTips { get; set; }
-		public ChampionInfo Info { get; set; }
+		public Info Info { get; set; }
 		public List<string> Tags { get; set; }
 		public string ParType { get; set; }
-		public ChampionStats Stats { get; set; }
-		public List<ChampionSpell> Spells { get; set; }
-		public ChampionPassive Passive { get; set; }
-		public ChampionRecommended Recommended { get; set; }
+		public Stats Stats { get; set; }
+		public List<Spell> Spells { get; set; }
+		public Passive Passive { get; set; }
+		public Recommended Recommended { get; set; }
 
 		public Champion(string id, string key, string name, string title, Image image, List<ChampionSkin> skins, string lore, string blurb, List<string> allyTips, List<string> enemyTips, ChampionInfo info, List<string> tags, string parType, ChampionStats stats, List<ChampionSpell> spells, ChampionPassive passive, ChampionRecommended recommended) {
 			Id = id;
@@ -200,211 +200,4 @@ namespace Jhinx.Jhin {
 		}		
 	}
 
-	public struct ChampionSkin {
-		public string Id { get; set; }
-		public int Num { get; set; }
-		public string Name { get; set; }
-		public bool Chromas { get; set; }
-		
-		public ChampionSkin(string id, int num, string name, bool chromas) {
-			Id = id;
-			Num = num;
-			Name = name;
-			Chromas = chromas;
-		}
-	}
-
-	public struct ChampionInfo {
-		public int Attack { get; set; }
-		public int Defense { get; set; }
-		public int Magic { get; set; }
-		public int Difficulty { get; set; }
-
-		public ChampionInfo(int attack, int defense, int magic, int difficulty) {
-			Attack = attack;
-			Defense = defense;
-			Magic = magic;
-			Difficulty = difficulty;
-		}
-	}
-	
-	public struct ChampionStats {
-		public float Hp { get; set; }
-		public float HpPerLevel { get; set; }
-		public float Mp { get; set; }
-		public float MpPerLevel { get; set; }
-		public float MoveSpeed { get; set; }
-		public float Armor { get; set; }
-		public float ArmorPerLevel { get; set; }
-		public float Spellblock { get; set; }
-		public float SpellblockPerLevel { get; set; }
-		public float AttackRange { get; set; }
-		public float HpRegen { get; set; }
-		public float HpRegenPerLevel { get; set; }
-		public float MpRegen { get; set; }
-		public float MpRegenPerLevel { get; set; }
-		public float Crit { get; set; }
-		public float CritPerLevel { get; set; }
-		public float AttackDamage { get; set; }
-		public float AttackDamagePerLevel { get; set; }
-		public float AttackSpeedPerLevel { get; set; }
-		
-		public ChampionStats(float hp, float hpPerLevel, float mp, float mpPerLevel, float moveSpeed, float armor, float armorPerLevel, float spellblock, float spellblockPerLevel, float attackRange, float hpRegen, float hpRegenPerLevel, float mpRegen, float mpRegenPerLevel, float crit, float critPerLevel, float attackDamage, float attackDamagePerLevel, float attackSpeedPerLevel) {
-			Hp = hp;
-			HpPerLevel = hpPerLevel;
-			Mp = mp;
-			MpPerLevel = mpPerLevel;
-			MoveSpeed = moveSpeed;
-			Armor = armor;
-			ArmorPerLevel = armorPerLevel;
-			Spellblock = spellblock;
-			SpellblockPerLevel = spellblockPerLevel;
-			AttackRange = attackRange;
-			HpRegen = hpRegen;
-			HpRegenPerLevel = hpRegenPerLevel;
-			MpRegen = mpRegen;
-			MpRegenPerLevel = mpRegenPerLevel;
-			Crit = crit;
-			CritPerLevel = critPerLevel;
-			AttackDamage = attackDamage;
-			AttackDamagePerLevel = attackDamagePerLevel;
-			AttackSpeedPerLevel = attackSpeedPerLevel;
-		}
-	}
-
-	public struct ChampionSpell {
-		public string Id { get; set; }
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public string Tooltip { get; set; }
-		public ChampionSpellLevelTip LevelTip { get; set; }
-		public int MaxRank { get; set; }
-		public List<int> Cooldown { get; set; }
-		public string CooldownBurn { get; set; }
-		public List<int> Cost { get; set; }
-		public string CostBurn { get; set; }
-		public string DataValues { get; set; } // Always null?
-		public List<List<float>> Effect { get; set; }
-		public List<string> EffectBurn { get; set; }
-		public List<Chompers.Chompers.Var> Vars { get; set; }
-		public string CostType { get; set; }
-		public string MaxAmmo { get; set; }
-		public List<int> Range { get; set; }
-		public string RangeBurn { get; set; }
-		public Image Image { get; set; }
-		public string Resource { get; set; }
-
-		public ChampionSpell(string id, string name, string description, string tooltip, ChampionSpellLevelTip levelTip, int maxRank, List<int> cooldown, string cooldownBurn, List<int> cost, string costBurn, string dataValues, List<List<float>> effect, List<string> effectBurn, List<Chompers.Chompers.Var> vars, string costType, string maxAmmo, List<int> range, string rangeBurn, Image image, string resource) {
-			Id = id;
-			Name = name;
-			Description = description;
-			Tooltip = tooltip;
-			LevelTip = levelTip;
-			MaxRank = maxRank;
-			Cooldown = cooldown;
-			CooldownBurn = cooldownBurn;
-			Cost = cost;
-			CostBurn = costBurn;
-			DataValues = dataValues;
-			Effect = effect;
-			EffectBurn = effectBurn;
-			Vars = vars;
-			CostType = costType;
-			MaxAmmo = maxAmmo;
-			Range = range;
-			RangeBurn = rangeBurn;
-			Image = image;
-			Resource = resource;
-		}
-	}
-	
-	public struct ChampionSpellLevelTip {
-		public List<string> Label { get; set; }
-		public List<string> Effect { get; set; }
-		
-		public ChampionSpellLevelTip(List<string> label, List<string> effect) {
-			Label = label;
-			Effect = effect;
-		}
-	}
-	
-	public struct ChampionPassive {
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public Image Image { get; set; }
-		
-		public ChampionPassive(string name, string description, Image image) {
-			Name = name;
-			Description = description;
-			Image = image;
-		}
-	}
-
-	public struct ChampionRecommended {
-		public string Champion { get; set; }
-		public string Title { get; set; }
-		public string Map { get; set; }
-		public string Mode { get; set; }
-		public string Type { get; set; }
-		public string CustomTag { get; set; }
-		public int SortRank { get; set; }
-		public bool ExtensionPage { get; set; }
-		public bool UseObviousCheckmark { get; set; }
-		public string CustomPanel { get; set; } // null?
-		public List<ChampionRecommendedBlock> Blocks { get; set; }
-		
-		public ChampionRecommended(string champion, string title, string map, string mode, string type, string customTag, int sortRank, bool extensionPage, bool useObviousCheckmark, string customPanel, List<ChampionRecommendedBlock> blocks) {
-			Champion = champion;
-			Title = title;
-			Map = map;
-			Mode = mode;
-			Type = type;
-			CustomTag = customTag;
-			SortRank = sortRank;
-			ExtensionPage = extensionPage;
-			UseObviousCheckmark = useObviousCheckmark;
-			CustomPanel = customPanel;
-			Blocks = blocks;
-		}
-	}
-
-	public struct ChampionRecommendedBlock {
-		public string Type { get; set; }
-		public bool RecMath { get; set; }
-		public bool RecSteps { get; set; }
-		public int MinSummonerLevel { get; set; }
-		public int MaxSummonerLevel { get; set; }
-		public string ShowIfSummonerSpell { get; set; }
-		public string HideIfSummonerSpell { get; set; }
-		public string AppendAferSection { get; set; }
-		public List<string> VisibleWithAllOf { get; set; }
-		public List<string> HiddenWithAnyOf { get; set; }
-		public List<ChampionRecommendedBlockItem> Items { get; set; }
-		
-		public ChampionRecommendedBlock(string type, bool recMath, bool recSteps, int minSummonerLevel, int maxSummonerLevel, string showIfSummonerSpell, string hideIfSummonerSpell, string appendAferSection, List<string> visibleWithAllOf, List<string> hiddenWithAnyOf, List<ChampionRecommendedBlockItem> items) {
-			Type = type;
-			RecMath = recMath;
-			RecSteps = recSteps;
-			MinSummonerLevel = minSummonerLevel;
-			MaxSummonerLevel = maxSummonerLevel;
-			ShowIfSummonerSpell = showIfSummonerSpell;
-			HideIfSummonerSpell = hideIfSummonerSpell;
-			AppendAferSection = appendAferSection;
-			VisibleWithAllOf = visibleWithAllOf;
-			HiddenWithAnyOf = hiddenWithAnyOf;
-			Items = items;
-		}
-	}
-
-	public struct ChampionRecommendedBlockItem {
-		public string Id { get; set; }
-		public int Count { get; set; }
-		public bool HideCount { get; set; }
-		
-		public ChampionRecommendedBlockItem(string id, int count, bool hideCount) {
-			Id = id;
-			Count = count;
-			HideCount = hideCount;
-		}
-	}
 }

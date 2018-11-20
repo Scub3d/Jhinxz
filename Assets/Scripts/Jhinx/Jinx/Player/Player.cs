@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 // ReSharper disable All
 
-namespace Jhinx.Jinx {
+namespace Jhinx.Jinx.Player {
 	public class Player {
 		public int Id { get; set; }
 		public string FirstName { get; set; }

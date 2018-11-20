@@ -19,7 +19,18 @@
               <e p="Image.cs" t="Include" />
             </e>
             <e p="Jhin" t="Include">
-              <e p="Champion.cs" t="Include" />
+              <e p="Champion" t="Include">
+                <e p="Block.cs" t="Include" />
+                <e p="Champion.cs" t="Include" />
+                <e p="Info.cs" t="Include" />
+                <e p="Item.cs" t="Include" />
+                <e p="LevelTip.cs" t="Include" />
+                <e p="Passive.cs" t="Include" />
+                <e p="Recommended.cs" t="Include" />
+                <e p="Skin.cs" t="Include" />
+                <e p="Spell.cs" t="Include" />
+                <e p="Stats.cs" t="Include" />
+              </e>
               <e p="Item.cs" t="Include" />
               <e p="Map.cs" t="Include" />
               <e p="Mastery.cs" t="Include" />
@@ -31,12 +42,41 @@
               <e p="SummonerSpell.cs" t="Include" />
             </e>
             <e p="Jinx" t="Include">
-              <e p="Game.cs" t="Include" />
-              <e p="League.cs" t="Include" />
-              <e p="Match.cs" t="Include" />
-              <e p="Player.cs" t="Include" />
-              <e p="Team.cs" t="Include" />
-              <e p="Tournament.cs" t="Include" />
+              <e p="Article.cs" t="Include" />
+              <e p="Game" t="Include">
+                <e p="Ban.cs" t="Include" />
+                <e p="Event.cs" t="Include" />
+                <e p="Frame.cs" t="Include" />
+                <e p="GameStats.cs" t="Include" />
+                <e p="GameTimline.cs" t="Include" />
+                <e p="Mastery.cs" t="Include" />
+                <e p="Participant.cs" t="Include" />
+                <e p="ParticipantFrame.cs" t="Include" />
+                <e p="ParticipantIdentity.cs" t="Include" />
+                <e p="Player.cs" t="Include" />
+                <e p="Rune.cs" t="Include" />
+                <e p="Stats.cs" t="Include" />
+                <e p="Team.cs" t="Include" />
+                <e p="Timeline.cs" t="Include" />
+              </e>
+              <e p="HtmlBlock.cs" t="Include" />
+              <e p="League" t="Include">
+                <e p="League.cs" t="Include" />
+              </e>
+              <e p="Marquees.cs" t="Include" />
+              <e p="Match" t="Include">
+                <e p="Match.cs" t="Include" />
+              </e>
+              <e p="Player" t="Include">
+                <e p="Player.cs" t="Include" />
+              </e>
+              <e p="ScheduleItem.cs" t="Include" />
+              <e p="Team" t="Include">
+                <e p="Team.cs" t="Include" />
+              </e>
+              <e p="Tournament" t="Include">
+                <e p="Tournament.cs" t="Include" />
+              </e>
               <e p="Video.cs" t="Include" />
             </e>
             <e p="Test.cs" t="Include" />

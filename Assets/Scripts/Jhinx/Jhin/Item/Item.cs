@@ -83,7 +83,7 @@ namespace Jhinx.Jhin.Item {
 				image, gold, tags, maps, stats);
 		}
 		
-		public static IEnumerator getMaps(string patchNumber, string languageCode) {
+		public static IEnumerator getItems(string patchNumber, string languageCode) {
 			using (UnityWebRequest www = UnityWebRequest.Get("https://ddragon.leagueoflegends.com/cdn/" + patchNumber + "/data/" + languageCode + "/item.json")) {
 				yield return www.Send();
 				if (www.isNetworkError || www.isHttpError) {

@@ -4,11 +4,9 @@ using System.Diagnostics.CodeAnalysis;
 using SimpleJSON;
 using UnityEngine;
 using UnityEngine.Networking;
+// ReSharper disable All
 
 namespace Jhinx.Jinx {
-	[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_SimpleTypes")]
-	[SuppressMessage("ReSharper", "SuggestVarOrType_Elsewhere")]
 	public class Video {
 		public int Id { get; set; }
 		public string Slug { get; set; }
@@ -34,6 +32,15 @@ namespace Jhinx.Jinx {
 		
 		public static Video parseVideoJSON(JSONNode videoJSON) {
 			return new Video(videoJSON["id"], videoJSON["slug"], videoJSON["label"], videoJSON["locale"], videoJSON["reference"], videoJSON["source"], videoJSON["createdAt"], videoJSON["updatedAt"], videoJSON["game"]);
+		}
+
+		public static List<Video> parseVideosJSON(JSONArray json) {
+			List<Video> videos = new List<Video>();
+			foreach (JSONNode videoJSON in json) {
+				videos.Add(parseVideoJSON(videoJSON));
+			}
+			
+			return videos;
 		}
 
 		public static IEnumerator getVideos(string patchNumber, string languageCode) {

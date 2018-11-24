@@ -35,7 +35,7 @@ namespace Jhinx.Jhin.Rune {
 			Chompers.Image image = Image.ParseImageJson(runeJSON["image"]);
 		
 			return new Rune(runeId, runeJSON["name"], image, runeJSON["tier"], runeJSON["type"], 
-				Chompers.Chompers.parseStatsDictionaryJSON(runeJSON["stats"]), 
+				Chompers.Chompers.parseStringFloatDictionaryJSON(runeJSON["stats"]), 
 				Chompers.Chompers.parseStringArrayJSON(runeJSON["tags"].AsArray), runeJSON["colloq"], runeJSON["plaintext"]);
 		}
 

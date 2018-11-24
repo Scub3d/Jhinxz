@@ -24,13 +24,13 @@ namespace Jhinx.Jinx.Game {
 		}
 
 		public static Timeline parseTimelineJSON(JSONNode json) {
-			Dictionary<string, float> creepsPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["creepsPerMinDeltas"]);
-			Dictionary<string, float> csDiffPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["csDiffPerMinDeltas"]);
-			Dictionary<string, float> damageTakenDiffPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["damageTakenDiffPerMinDeltas"]);
-			Dictionary<string, float> damageTakenPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["damageTakenPerMinDeltas"]);
-			Dictionary<string, float> goldPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["goldPerMinDeltas"]);
-			Dictionary<string, float> xpDiffPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["xpDiffPerMinDeltas"]);
-			Dictionary<string, float> xpPerMinDeltas = Chompers.Chompers.parseStatsDictionaryJSON(json["xpPerMinDeltas"]);
+			Dictionary<string, float> creepsPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["creepsPerMinDeltas"]);
+			Dictionary<string, float> csDiffPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["csDiffPerMinDeltas"]);
+			Dictionary<string, float> damageTakenDiffPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["damageTakenDiffPerMinDeltas"]);
+			Dictionary<string, float> damageTakenPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["damageTakenPerMinDeltas"]);
+			Dictionary<string, float> goldPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["goldPerMinDeltas"]);
+			Dictionary<string, float> xpDiffPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["xpDiffPerMinDeltas"]);
+			Dictionary<string, float> xpPerMinDeltas = Chompers.Chompers.parseStringFloatDictionaryJSON(json["xpPerMinDeltas"]);
 			return new Timeline(creepsPerMinDeltas, csDiffPerMinDeltas, damageTakenDiffPerMinDeltas, damageTakenPerMinDeltas, goldPerMinDeltas, xpDiffPerMinDeltas, xpPerMinDeltas);
 		}
 	}

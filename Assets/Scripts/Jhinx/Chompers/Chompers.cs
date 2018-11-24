@@ -226,8 +226,17 @@ namespace Jhinx.Chompers {
 			return listToReturn;
 		}
 
-		public static Dictionary<string, float> parseStatsDictionaryJSON(JSONNode json) {
+		public static Dictionary<string, float> parseStringFloatDictionaryJSON(JSONNode json) {
 			Dictionary<string, float> dictToReturn = new Dictionary<string, float>();
+			foreach (string key in json.Keys) {
+				dictToReturn.Add(key, json[key]);
+			}
+
+			return dictToReturn;
+		}
+		
+		public static Dictionary<string, string> parseStringStringDictionaryJSON(JSONNode json) {
+			Dictionary<string, string> dictToReturn = new Dictionary<string, string>();
 			foreach (string key in json.Keys) {
 				dictToReturn.Add(key, json[key]);
 			}

@@ -1,4 +1,8 @@
 // ReSharper disable All
+
+using System.Collections.Generic;
+using SimpleJSON;
+
 namespace Jhinx.Jinx.Player {
 	public class StatsHistory {
 		public string Id { get; set; }
@@ -34,5 +38,20 @@ namespace Jhinx.Jinx.Player {
 			Opponent = opponent;
 			Game = game;
 		}
+
+		public static StatsHistory parseStatsHistoryJSON(JSONNode json) {
+			return new StatsHistory(json["id"], json["playerId"], json["championId"], json["timestamp"],
+				json["assists"], json["deaths"], json["kills"], json["csPerTenMin"], json["kdaRatio"],
+				json["killParticipation"], json["win"], json["match"], json["team"], json["opponent"], json["game"]);
+		}
+
+		public static List<StatsHistory> parseStatsHistoriesJSON(JSONArray json) {
+			List<StatsHistory> statsHistories = new List<StatsHistory>();
+			foreach (JSONNode statsHistoryJSON in json) {
+				statsHistories.Add(parseStatsHistoryJSON(statsHistoryJSON));
+			}
+			
+			return statsHistories;
+		}		
 	}
 }

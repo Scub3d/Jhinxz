@@ -98,8 +98,11 @@
                 <e p="Match.cs" t="Include" />
               </e>
               <e p="Player" t="Include">
+                <e p="MostPlayedChampion.cs" t="Include" />
+                <e p="PhotoInformation.cs" t="Include" />
                 <e p="Player.cs" t="Include" />
                 <e p="StatsHistory.cs" t="Include" />
+                <e p="TournamentStats.cs" t="Include" />
               </e>
               <e p="ScheduleItem" t="Include">
                 <e p="ScheduleItem.cs" t="Include" />

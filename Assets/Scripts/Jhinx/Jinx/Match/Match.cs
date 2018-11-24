@@ -1,61 +1,49 @@
+using System.Collections;
 using System.Collections.Generic;
+using SimpleJSON;
+using UnityEngine;
+using UnityEngine.Networking;
 
-namespace Jhinx {
-	namespace Jinx {
-		public class Match {
-			public string Id { get; }
-			public string Name { get; }
-			public string TournamentId { get; }
-			public List<Video> Videos { get; }
-			public List<MatchTeam> Teams { get; }
-			public List<MatchGame> Games { get; }
+// ReSharper disable All
 
-			public Match(string id, string name, string tournamentId, List<Video> videos, List<MatchTeam> teams,
-				List<MatchGame> games) {
-				this.Id = id;
-				this.Name = name;
-				this.TournamentId = tournamentId;
-				this.Videos = videos;
-				this.Teams = teams;
-				this.Games = games;
-			}
+namespace Jhinx.Jinx.Match {
+	public class Match {
+		public List<Team> Teams { get; set; }
+		public List<Player> Players { get; set; }
+		public List<ScheduleItem> ScheduleItems { get; set; }
+		public List<GameIdMapping> GameIdMappings { get; set; }
+		public List<Video> Videos { get; set; }
+		public List<HtmlBlock> HtmlBlocks { get; set; }
+
+		public Match(List<Team> teams, List<Player> players, List<ScheduleItem> scheduleItems, List<GameIdMapping> gameIdMappings, List<Video> videos, List<HtmlBlock> htmlBlocks) {
+			Teams = teams;
+			Players = players;
+			ScheduleItems = scheduleItems;
+			GameIdMappings = gameIdMappings;
+			Videos = videos;
+			HtmlBlocks = htmlBlocks;
 		}
 
-		public struct MatchTeam {
-			public int Id { get; }
-			public string Name { get; }
-			public List<MatchTeamPlayer> Starters { get; }
-			public List<MatchTeamPlayer> Subs { get; }
-
-			public MatchTeam(int id, string name, List<MatchTeamPlayer> starters, List<MatchTeamPlayer> subs) {
-				this.Id = id;
-				this.Name = name;
-				this.Starters = starters;
-				this.Subs = subs;
-			}
+		public static Match parseMatchJSON(JSONNode json) {
+			List<Team> teams = Team.parseTeamsJSON(json["teams"].AsArray);
+			List<Player> players = Player.parsePlayersJSON(json["players"].AsArray);
+			List<ScheduleItem> scheduleItems = "";
+			List<GameIdMapping> gameIdMappings = GameIdMapping.parseGameIdMappingsJSON(json["gameIdMappings"].AsArray);
+			List<Video> videos = Video.parseVideosJSON(json["videos"].AsArray);
+			List<HtmlBlock> htmlBlocks = "";
+			return new Match(teams, players, scheduleItems, gameIdMappings, videos, htmlBlocks);
 		}
-
-		public struct MatchTeamPlayer {
-			public int Id { get; }
-			public string Name { get; }
-			public string Role { get; }
-
-			public MatchTeamPlayer(int id, string name, string role) {
-				this.Id = id;
-				this.Name = name;
-				this.Role = role;
-			}
-		}
-
-		public struct MatchGame {
-			public string Id { get; }
-			public string Name { get; }
-			public string GeneratedName { get; }
-
-			public MatchGame(string id, string name, string generatedName) {
-				this.Id = id;
-				this.Name = name;
-				this.GeneratedName = generatedName;
+		
+		public static IEnumerator getMatch(string tournamentId, string matchId) {
+			using (UnityWebRequest www = UnityWebRequest.Get("http://api.lolesports.com/api/v2/highlanderMatchDetails?tournamentId=" + tournamentId + "&matchId=" + matchId)) {
+				yield return www.Send();
+				if (www.isNetworkError || www.isHttpError) {
+					Debug.Log(www.error);
+					yield return null;
+				} else {
+					JSONNode matchJSON = JSON.Parse(www.downloadHandler.text);
+					yield return parseMatchJSON(matchJSON);
+				}
 			}
 		}
 	}

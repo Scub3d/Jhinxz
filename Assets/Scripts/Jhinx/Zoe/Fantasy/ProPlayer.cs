@@ -3,7 +3,7 @@ using SimpleJSON;
 
 // ReSharper disable All
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class ProPlayer {
 		public int Id { get; set; }
 		public int RiotId { get; set; }

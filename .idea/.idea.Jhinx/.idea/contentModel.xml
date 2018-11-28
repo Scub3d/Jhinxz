@@ -89,20 +89,25 @@
                 <e p="HtmlBlock.cs" t="Include" />
               </e>
               <e p="League" t="Include">
+                <e p="HighlanderRecord.cs" t="Include" />
                 <e p="League.cs" t="Include" />
               </e>
               <e p="Marquees" t="Include">
                 <e p="Marquees.cs" t="Include" />
               </e>
               <e p="Match" t="Include">
+                <e p="GameIdMapping.cs" t="Include" />
                 <e p="Match.cs" t="Include" />
+                <e p="Player.cs" t="Include" />
+                <e p="Team.cs" t="Include" />
               </e>
               <e p="Player" t="Include">
+                <e p="Champion.cs" t="Include" />
                 <e p="MostPlayedChampion.cs" t="Include" />
                 <e p="PhotoInformation.cs" t="Include" />
                 <e p="Player.cs" t="Include" />
                 <e p="StatsHistory.cs" t="Include" />
-                <e p="TournamentStats.cs" t="Include" />
+                <e p="StatsSummary.cs" t="Include" />
               </e>
               <e p="ScheduleItem" t="Include">
                 <e p="ScheduleItem.cs" t="Include" />
@@ -122,6 +127,23 @@
               </e>
             </e>
             <e p="Test.cs" t="Include" />
+            <e p="Zoe" t="Include">
+              <e p="Fantasy" t="Include">
+                <e p="ActualPlayerStat.cs" t="Include" />
+                <e p="ActualTeamStat.cs" t="Include" />
+                <e p="Fantasy.cs" t="Include" />
+                <e p="FantasyPoints.cs" t="Include" />
+                <e p="FlavorTextEntry.cs" t="Include" />
+                <e p="ProjectedPlayerStat.cs" t="Include" />
+                <e p="ProjectedTeamStat.cs" t="Include" />
+                <e p="ProMatch.cs" t="Include" />
+                <e p="ProPlayer.cs" t="Include" />
+                <e p="ProTeam.cs" t="Include" />
+                <e p="RosterLockByWeek.cs" t="Include" />
+                <e p="Stats.cs" t="Include" />
+                <e p="TrendByWeek.cs" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
       </e>

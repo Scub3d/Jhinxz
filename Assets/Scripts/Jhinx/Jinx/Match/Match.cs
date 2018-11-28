@@ -27,10 +27,10 @@ namespace Jhinx.Jinx.Match {
 		public static Match parseMatchJSON(JSONNode json) {
 			List<Team> teams = Team.parseTeamsJSON(json["teams"].AsArray);
 			List<Player> players = Player.parsePlayersJSON(json["players"].AsArray);
-			List<ScheduleItem> scheduleItems = "";
+			List<ScheduleItem> scheduleItems = ScheduleItem.parseScheduleItemsJSON(json["scheduleItems"].AsArray);
 			List<GameIdMapping> gameIdMappings = GameIdMapping.parseGameIdMappingsJSON(json["gameIdMappings"].AsArray);
 			List<Video> videos = Video.parseVideosJSON(json["videos"].AsArray);
-			List<HtmlBlock> htmlBlocks = "";
+			List<HtmlBlock> htmlBlocks = HtmlBlock.parseHtmlBlocksJSON(json["htmlBlocks"].AsArray);
 			return new Match(teams, players, scheduleItems, gameIdMappings, videos, htmlBlocks);
 		}
 		

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 // ReSharper disable All
 
-namespace Jhinx.Jinx {
+namespace Jhinx.Jinx.Article {
 	// Fix all arrays that turn into dicts
 	public class Article {
 		public string Nid { get; set; }
@@ -69,71 +69,5 @@ namespace Jhinx.Jinx {
 		// https://api.lolesports.com/api/v1/articles?from=100
 		// http://api.lolesports.com/api/v1/marquees
 
-	}
-
-	public struct ArticlePath {
-		public string Canonical { get; set; }
-		public List<string> Alternate { get; set; }
-		
-		public ArticlePath(string canonical, List<string> alternate) {
-			Canonical = canonical;
-			Alternate = alternate;
-		}
-	}
-
-	public struct ArticleCategory {
-		public ArticleCategoryCategory Category { get; set; }
-		
-		public ArticleCategory(ArticleCategoryCategory category) {
-			Category = category;
-		}
-	}
-	
-	public struct ArticleCategoryCategory {
-		public string MachineName { get; set; }
-		public string DisplayName { get; set; }
-		
-		public ArticleCategoryCategory(string machineName, string displayName) {
-			MachineName = machineName;
-			DisplayName = displayName;
-		}
-	}
-	
-	public struct ArticleMedia {
-		public List<string> Video { get; set; }
-		public ArticleMediaImage Image { get; set; }
-		public List<string> Marquee { get; set; }
-		
-		public ArticleMedia(List<string> video, ArticleMediaImage image, List<string> marquee) {
-			Video = video;
-			Image = image;
-			Marquee = marquee;
-		}
-	}
-
-	public struct ArticleMediaImage {
-		public string Type { get; set; }
-		public string Original { get; set; }
-		public ArticleMediaImageVariants Variants { get; set; }
-		
-		public ArticleMediaImage(string type, string original, ArticleMediaImageVariants variants) {
-			Type = type;
-			Original = original;
-			Variants = variants;
-		}
-	}
-
-	public struct ArticleMediaImageVariants {
-		public string ArticleThumbnail { get; set; }
-		public string ArticleImage { get; set; }
-		public string Marquee { get; set; }
-		public string Hero { get; set; }
-		
-		public ArticleMediaImageVariants(string articleThumbnail, string articleImage, string marquee, string hero) {
-			ArticleThumbnail = articleThumbnail;
-			ArticleImage = articleImage;
-			Marquee = marquee;
-			Hero = hero;
-		}
 	}
 }

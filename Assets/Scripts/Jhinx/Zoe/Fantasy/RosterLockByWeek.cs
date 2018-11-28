@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using SimpleJSON;
 // ReSharper disable All
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class RosterLockByWeek {
 		public string WeekNumber { get; set; }
 		public string NALockDate { get; set; }

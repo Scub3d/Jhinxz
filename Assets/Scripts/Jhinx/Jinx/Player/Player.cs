@@ -64,7 +64,8 @@ namespace Jhinx.Jinx.Player {
 			List<int> subsOnTeams = Chompers.Chompers.parseIntArrayJSON(json["subsOnTeams"].AsArray);
 			List<int> teams = Chompers.Chompers.parseIntArrayJSON(json["teams"].AsArray);
 			PhotoInformation photoInformation = PhotoInformation.parsePhotoInformationJSON(json["photoInformaiton"]);
-			List<ScheduleItem> scheduleItems = ScheduleItem.parseScheduledItemsJSON(json["scheduledItems"]);
+			// Check to see if they are the same format
+			List<ScheduleItem> scheduleItems = ScheduleItem.parseScheduleItemsJSON(json["scheduledItems"].AsArray);
 			List<string> playerStatsHistory = Chompers.Chompers.parseStringArrayJSON(json["playerStatsHistory"].AsArray);
 			
 			return new Player(json["id"], json["slug"], json["name"], json["firstName"], json["lastName"],
@@ -83,7 +84,5 @@ namespace Jhinx.Jinx.Player {
 		}
 		
 		// Yeah. Need to figure it out
-		
-		
 	}
 }

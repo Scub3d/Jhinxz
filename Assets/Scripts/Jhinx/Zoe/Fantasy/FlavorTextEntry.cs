@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using SimpleJSON;
 // ReSharper disable All
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class FlavorTextEntry {
 		public string LanguageCode { get; set; }
 		public string FlavorText { get; set; }

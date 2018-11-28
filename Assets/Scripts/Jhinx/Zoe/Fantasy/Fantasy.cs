@@ -1,10 +1,13 @@
+using System.Collections;
 using System.Collections.Generic;
 using Jhinx.Jinx.Game;
 using SimpleJSON;
+using UnityEngine;
+using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class Fantasy {
 		public string SeasonName { get; set; }
 		public string SeasonSplit { get; set; }
@@ -37,24 +40,26 @@ namespace Jhinx.Zoe {
 		public static Fantasy parseFantasyJSON(JSONNode json) {
 			List<int> byeWeeks = Chompers.Chompers.parseIntArrayJSON(json["byeWeeks"].AsArray);
 			List<RosterLockByWeek> rosterLocksByWeek = RosterLockByWeek.parseRosterLocksByWeekJSON(json["rosterLocksByWeek"]);
-			
-			/*Dictionary<string, Dictionary<string, string>> rosterLocksByWeek = new Dictionary<string, Dictionary<string, string>>();
-			foreach (string weekKey in json["rosterLocksByWeek"].Keys) {
-				Dictionary<string, string> rosterLock = new Dictionary<string, string>();
-				foreach (string rosterKey in json["rosterLocksByWeek"][weekKey].Keys) {
-					rosterLock.Add(rosterKey, json["rosterLocksByWeek"][weekKey][rosterKey]);
-				}
-				rosterLocksByWeek.Add(weekKey, rosterLock);
-			}*/
-
-			List<ProTeam> proTeams = ProTeam.parseProTeamsJSON(json["proTeams"]);
-			List<ProPlayer> proPlayers = ProPlayer.parseProPlayersJSON(json["proPlayers"]);
-			List<ProMatch> proMatches = ProMatch.parseProMatchsJSON(json["proMatches"]);
+			List<ProTeam> proTeams = ProTeam.parseProTeamsJSON(json["proTeams"].AsArray);
+			List<ProPlayer> proPlayers = ProPlayer.parseProPlayersJSON(json["proPlayers"].AsArray);
+			List<ProMatch> proMatches = ProMatch.parseProMatchesJSON(json["proMatches"].AsArray);
 			Stats stats = Stats.parseStatsJSON(json["stats"]);
 
 			return new Fantasy(json["seasonName"], json["seasonSplit"], json["seasonBegins"], json["seasonEnds"],
 				json["numberOfWeeks"], byeWeeks, rosterLocksByWeek, proTeams, proPlayers, proMatches, stats,
 				json["rosterTrendsDisabled"]);
+		}
+		
+		public static IEnumerator getLeague(string region, string language, int season) {
+			using (UnityWebRequest www = UnityWebRequest.Get("https://fantasy." + region + ".lolesports.com/" + language + "/api/season/" + season)) {
+				yield return www.SendWebRequest();
+				if (www.isNetworkError || www.isHttpError) {
+					Debug.Log(www.error);
+					yield return null;
+				} else {
+					yield return parseFantasyJSON(JSON.Parse(www.downloadHandler.text));                       
+				}
+			}
 		}
 	}
 }

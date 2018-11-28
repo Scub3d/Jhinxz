@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using SimpleJSON;
 // ReSharper disable All
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class TrendByWeek {
 		public string WeekNumber { get; set; }
 		public float OwnedPercentage { get; set; }

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 // ReSharper disable All
 
-namespace Jhinx.Jinx {
+namespace Jhinx.Jinx.League {
     public class League {
         public int Id { get; set; }
         public string Slug { get; set; }
@@ -18,14 +18,14 @@ namespace Jhinx.Jinx {
         public string UpdatedAt { get; set; }
         public Dictionary<string, string> Abouts  { get; set; }
         public Dictionary<string, string> Names { get; set; }
-        public List<string> TournamentIds  { get; set; }
+        public List<string> Tournaments  { get; set; }
         
         // Optional Extra. Lmao
-        public List<Tournament> Tournaments { get; set; }
-        public List<HighlandRecord> HighlandRecords { get; set; }
-        public List<Team> Teams { get; set; }
+        //public List<Tournament> Tournaments { get; set; }
+        //public List<HighlanderRecord> HighlandRecords { get; set; }
+        //public List<Team> Teams { get; set; }
         
-        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournamentIds) {
+        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournaments) {
             Id = id;
             Slug = slug;
             Name = name;
@@ -37,24 +37,9 @@ namespace Jhinx.Jinx {
             UpdatedAt = updatedAt;
             Abouts = abouts;
             Names = names;
-            TournamentIds = tournamentIds;
+            Tournaments = tournaments;
         }
-        
-        public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournamentIds, List<Tournament> tournaments, List<HighlandRecord> highlandRecords, List<Team> teams) {
-            Id = id;
-            Slug = slug;
-            Name = name;
-            Guid = guid;
-            Region = region;
-            DrupalId = drupalId;
-            LogoURL = logoUrl;
-            CreatedAt = createdAt;
-            UpdatedAt = updatedAt;
-            Abouts = abouts;
-            Names = names;
-            TournamentIds = tournamentIds;
-        }
-        
+       
         private static League parseLeagueJSON(JSONNode leagueJSON) {
             Dictionary<string, string> abouts = new Dictionary<string, string>();
             foreach (string aboutLanguageCode in leagueJSON["abouts"].Keys) {
@@ -100,27 +85,5 @@ namespace Jhinx.Jinx {
         }         
         */  
        
-    }
-
-    public struct HighlandRecord {
-        public int Wins { get; set; }
-        public int Losses { get; set; }
-        public int Ties { get; set; }
-        public int Score { get; set; }
-        public string Roster { get; set; }
-        public string Tournament { get; set; }
-        public string Bracket { get; set; }
-        public string Id { get; set; }
-        
-        public HighlandRecord(int wins, int losses, int ties, int score, string roster, string tournament, string bracket, string id) {
-            Wins = wins;
-            Losses = losses;
-            Ties = ties;
-            Score = score;
-            Roster = roster;
-            Tournament = tournament;
-            Bracket = bracket;
-            Id = id;
-        }
     }
 }

@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using SimpleJSON;
 
-namespace Jhinx.Zoe {
+namespace Jhinx.Zoe.Fantasy {
 	public class ProMatch {
 		public int Id { get; set; }
 		public string RiotId { get; set; }

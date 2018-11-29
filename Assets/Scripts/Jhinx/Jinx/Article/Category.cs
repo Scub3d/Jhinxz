@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using SimpleJSON;
+
 namespace Jhinx.Jinx.Article {
 	public class Category {
 		public string MachineName { get; set; }
@@ -17,8 +20,8 @@ namespace Jhinx.Jinx.Article {
 			foreach (JSONNode categoryJSON in json) {
 				categories.Add(parseCategoryJSON(categoryJSON));
 			}
-			
-			return categories
+
+			return categories;
 		}
 	}
 }

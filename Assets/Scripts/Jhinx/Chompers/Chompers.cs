@@ -203,10 +203,15 @@ namespace Jhinx.Chompers {
 
 
 		public static List<string> parseStringArrayJSON(JSONArray json) {
-			List<string> listToReturn = new List<string>();
-			foreach (JSONString value in json) {
-				listToReturn.Add(value.Value);
+			if (json == null) {
+				return null;
 			}
+			
+			List<string> listToReturn = new List<string>();
+			for (int i = 0; i < json.Count; i++) {
+				listToReturn.Add(json[i].Value);
+			}
+
 			return listToReturn;
 		}
 		
@@ -219,9 +224,13 @@ namespace Jhinx.Chompers {
 		}
 		
 		public static List<float> parseFloatArrayJSON(JSONArray json) {
+			if (json == null) {
+				return null;
+			}
+			
 			List<float> listToReturn = new List<float>();
-			foreach (JSONNumber value in json) {
-				listToReturn.Add(value);
+			for (int i = 0; i < json.Count; i++) {
+				listToReturn.Add(json[i].AsFloat);
 			}
 			return listToReturn;
 		}

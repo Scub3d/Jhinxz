@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Jhinx.Chompers;
 using SimpleJSON;
 
@@ -51,14 +52,14 @@ namespace Jhinx.Jhin.Champion {
 		}
 		
 		public static Spell parseSpellJSON(JSONNode spellJSON) {
-			LevelTip levelTip = LevelTip.parseLevelTipJSON(spellJSON["levelTip"]);
+			LevelTip levelTip = LevelTip.parseLevelTipJSON(spellJSON["leveltip"]);
 			
 			// TODO: Fix below
 			List<List<float>> effect = new List<List<float>>();
-			foreach (JSONArray effectArray in spellJSON["effect"].AsArray) {
-				effect.Add(Chompers.Chompers.parseFloatArrayJSON(effectArray));
+			for (int i = 0; i < effect.Count; i++) {
+				effect.Add(Chompers.Chompers.parseFloatArrayJSON(spellJSON["effect"][i].AsArray));
 			}
-			
+
 			List<Chompers.Chompers.Var> vars = new List<Chompers.Chompers.Var>();
 			foreach (JSONNode varJSON in spellJSON["vars"]) {
 				vars.Add(new Chompers.Chompers.Var(varJSON["link"], varJSON["coeff"], varJSON["key"]));

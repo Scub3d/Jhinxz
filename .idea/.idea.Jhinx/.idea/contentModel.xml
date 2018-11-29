@@ -119,7 +119,15 @@
                 <e p="Team.cs" t="Include" />
               </e>
               <e p="Tournament" t="Include">
+                <e p="Bracket.cs" t="Include" />
+                <e p="Breakpoint.cs" t="Include" />
+                <e p="Game.cs" t="Include" />
+                <e p="Input.cs" t="Include" />
+                <e p="Match.cs" t="Include" />
                 <e p="PlayerStat.cs" t="Include" />
+                <e p="Result.cs" t="Include" />
+                <e p="Roster.cs" t="Include" />
+                <e p="Standing.cs" t="Include" />
                 <e p="Tournament.cs" t="Include" />
               </e>
               <e p="Video" t="Include">

@@ -20,11 +20,6 @@ namespace Jhinx.Jinx.League {
         public Dictionary<string, string> Names { get; set; }
         public List<string> Tournaments  { get; set; }
         
-        // Optional Extra. Lmao
-        //public List<Tournament> Tournaments { get; set; }
-        //public List<HighlanderRecord> HighlandRecords { get; set; }
-        //public List<Team> Teams { get; set; }
-        
         public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournaments) {
             Id = id;
             Slug = slug;
@@ -41,26 +36,26 @@ namespace Jhinx.Jinx.League {
         }
        
         private static League parseLeagueJSON(JSONNode leagueJSON) {
-            Dictionary<string, string> abouts = new Dictionary<string, string>();
-            foreach (string aboutLanguageCode in leagueJSON["abouts"].Keys) {
-                abouts.Add(aboutLanguageCode, leagueJSON["abouts"][aboutLanguageCode]);
-            }
-            
-            Dictionary<string, string> names = new Dictionary<string, string>();
-            foreach (string nameLanguageCode in leagueJSON["names"].Keys) {
-                names.Add(nameLanguageCode, leagueJSON["names"][nameLanguageCode]);
-            }
-            
-            List<string> tournaments = new List<string>();
-            foreach(JSONString tournamentId in leagueJSON["tournaments"].AsArray) {
-                tournaments.Add(tournamentId);
-            }                
-            
+            Dictionary<string, string> abouts = Chompers.Chompers.parseStringStringDictionaryJSON(leagueJSON["abouts"]);
+            Dictionary<string, string> names = Chompers.Chompers.parseStringStringDictionaryJSON(leagueJSON["names"]);
+            List<string> tournaments = Chompers.Chompers.parseStringArrayJSON(leagueJSON["tournaments"].AsArray);
             return new League(leagueJSON["id"], leagueJSON["slug"], leagueJSON["name"], leagueJSON["guid"], leagueJSON["region"], leagueJSON["drupalId"], leagueJSON["logoUrl"], leagueJSON["createdAt"], leagueJSON["updatedAt"], abouts, names, tournaments);
         }
 
         public static IEnumerator getLeague(int leagueId) {
             using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/v1/leagues?id=" + leagueId)) {
+                yield return www.Send();
+                if (www.isNetworkError || www.isHttpError) {
+                    Debug.Log(www.error);
+                    yield return null;
+                } else {
+                    yield return parseLeagueJSON(JSON.Parse(www.downloadHandler.text)["leagues"][0]);                       
+                }
+            }
+        }
+        
+        public static IEnumerator getLeague(string slug) {
+            using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/v1/leagues?slug=" + slug)) {
                 yield return www.Send();
                 if (www.isNetworkError || www.isHttpError) {
                     Debug.Log(www.error);

@@ -1,5 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using SimpleJSON;
+using UnityEngine;
+using UnityEngine.Networking;
 
 // ReSharper disable All
 
@@ -20,7 +23,7 @@ namespace Jhinx.Jinx.Player {
 		public Dictionary<string, string> Bios { get; set; }
 		public Dictionary<string, string> ForeignIds { get; set; }
 		public Dictionary<string, string> SocialNetworks { get; set; }
-		public List<Champion> Champions { get; set; } // Check back on this when LCS resumes
+		public List<Champion> Champions { get; set; }
 		public List<int> StarterOnTeams { get; set; }
 		public List<int> SubOnTeams { get; set; }
 		public List<int> Teams { get; set; }
@@ -64,8 +67,10 @@ namespace Jhinx.Jinx.Player {
 			List<int> subsOnTeams = Chompers.Chompers.parseIntArrayJSON(json["subsOnTeams"].AsArray);
 			List<int> teams = Chompers.Chompers.parseIntArrayJSON(json["teams"].AsArray);
 			PhotoInformation photoInformation = PhotoInformation.parsePhotoInformationJSON(json["photoInformaiton"]);
+			
 			// Check to see if they are the same format
 			List<ScheduleItem> scheduleItems = ScheduleItem.parseScheduleItemsJSON(json["scheduledItems"].AsArray);
+			
 			List<string> playerStatsHistory = Chompers.Chompers.parseStringArrayJSON(json["playerStatsHistory"].AsArray);
 			
 			return new Player(json["id"], json["slug"], json["name"], json["firstName"], json["lastName"],
@@ -83,6 +88,28 @@ namespace Jhinx.Jinx.Player {
 			return players;
 		}
 		
-		// Yeah. Need to figure it out
+		public static IEnumerator getPlayer(string slug, string tournamentId) {
+			using (UnityWebRequest www = UnityWebRequest.Get("http://api.lolesports.com/api/v1/players?slug=" + slug + "&tournament=" + tournamentId)) {
+				yield return www.Send();
+				if (www.isNetworkError || www.isHttpError) {
+					Debug.Log(www.error);
+					yield return null;
+				} else {
+					yield return parsePlayerJSON(JSON.Parse(www.downloadHandler.text)["players"][0]);
+				}
+			}
+		}
+		
+		public static IEnumerator getPlayer(int id, string tournamentId) {
+			using (UnityWebRequest www = UnityWebRequest.Get("http://api.lolesports.com/api/v1/players?slug=" + id + "&tournament=" + tournamentId)) {
+				yield return www.Send();
+				if (www.isNetworkError || www.isHttpError) {
+					Debug.Log(www.error);
+					yield return null;
+				} else {
+					yield return parsePlayerJSON(JSON.Parse(www.downloadHandler.text)["players"][0]);
+				}
+			}
+		}
 	}
 }

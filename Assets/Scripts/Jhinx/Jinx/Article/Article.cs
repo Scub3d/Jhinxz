@@ -18,9 +18,9 @@ namespace Jhinx.Jinx.Article {
 		public string Language { get; set; }
 		public string ShortTitle { get; set; }
 		public List<string> Tags { get; set; } // empty
-		public ArticlePath Path { get; set; }
+		public Path Path { get; set; }
 		public string ShowIn { get; set; } // null
-		public ArticleCategory Category { get; set; }
+		public Category Category { get; set; }
 		public List<string> ExternalScripts { get; set; } // null
 		public string CustomTemplate { get; set; }
 		public List<string> Backdrop { get; set; } // null
@@ -29,11 +29,11 @@ namespace Jhinx.Jinx.Article {
 		public string BodySmall { get; set; } // null
 		public string BodyMedium { get; set; } // null
 		public string BodyFull { get; set; }
-		public ArticleMedia Media { get; set; }
+		public Media Media { get; set; }
 		public string Redirect { get; set; } // null
 		public List<string> Comments { get; set; } // Empty. Except where it became a dictionary
 		
-		public Article(string nid, string uuid, string tuuid, string type, string title, string published, string created, string changed, int status, string region, string locale, string language, string shortTitle, List<string> tags, ArticlePath path, string showIn, ArticleCategory category, List<string> externalScripts, string customTemplate, List<string> backdrop, List<string> leagues, string author, string bodySmall, string bodyMedium, string bodyFull, ArticleMedia media, string redirect, List<string> comments) {
+		public Article(string nid, string uuid, string tuuid, string type, string title, string published, string created, string changed, int status, string region, string locale, string language, string shortTitle, List<string> tags, Path path, string showIn, Category category, List<string> externalScripts, string customTemplate, List<string> backdrop, List<string> leagues, string author, string bodySmall, string bodyMedium, string bodyFull, Media media, string redirect, List<string> comments) {
 			Nid = nid;
 			Uuid = uuid;
 			Tuuid = tuuid;

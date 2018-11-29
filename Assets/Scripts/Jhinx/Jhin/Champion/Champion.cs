@@ -128,7 +128,8 @@ namespace Jhinx.Jhin.Champion {
 					yield return null;
 				} else {
 					JSONNode championJSON = JSON.Parse(www.downloadHandler.text)["data"];
-					yield return parseChampionJSON(championJSON);                       
+					Debug.Log(championJSON[championId]);
+					yield return parseChampionJSON(championJSON[championId]);                       
 				}
 			}
 		}		

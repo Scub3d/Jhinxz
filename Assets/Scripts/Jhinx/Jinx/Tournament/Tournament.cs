@@ -1,73 +1,61 @@
 using System.Collections.Generic;
+using SimpleJSON;
 
-namespace Jhinx.Jinx {	
+// ReSharper disable All
+
+namespace Jhinx.Jinx.Tournament {	
 	public class Tournament {
 		public string Id { get; set; }
 		public string Title { get; set; }
 		public string Description { get; set; }
+		public Roles Roles { get; set; }
+		public string Queues { get; set; } // Always null??
+		public List<Roster> Rosters { get; set; }
+		public bool Published { get; set; }	
+		public List<Breakpoint> Breakpoints { get; set; }
+		public List<Bracket> Brackets { get; set; }
+		public List<string> LiveMatches { get; set; }
 		public string StartDate { get; set; }
 		public string EndDate { get; set; }
-		public int LeagueId { get; set; }
-		public bool Published { get; set; }
-		public List<TournamentRoster> Rosters { get; set; }
-		public List<TournamentBreakpoint> Breakpoints { get; set; }
-		public List<TournamentBracket> Brackets { get; set; }
 		public List<string> PlatformIds { get; set; }
+		public string LeagueId { get; set; }
 		public List<string> GameIds { get; set; }
+		public string League { get; set; }
 					
+		public Tournament(string id, string title, string description, Roles roles, string queues, List<Roster> rosters, bool published, List<Breakpoint> breakpoints, List<Bracket> brackets, List<string> liveMatches, string startDate, string endDate, List<string> platformIds, string leagueId, List<string> gameIds, string league) {
+			Id = id;
+			Title = title;
+			Description = description;
+			Roles = roles;
+			Queues = queues;
+			Rosters = rosters;
+			Published = published;
+			Breakpoints = breakpoints;
+			Brackets = brackets;
+			LiveMatches = liveMatches;
+			StartDate = startDate;
+			EndDate = endDate;
+			PlatformIds = platformIds;
+			LeagueId = leagueId;
+			GameIds = gameIds;
+			League = league;
+		}
+
+		public static Tournament parseTournamentJSON(JSONNode json) {
+			Roles roles = Roles.parseRolesJSON(json["roles"]);
+			List<Roster> rosters = Roster.parseRostersJSON(json["rosters"].AsArray);
+			List<Breakpoint> breakpoints = null;//Breakpoint.parseBreakpointsJSON(json["breakpoints"].AsArray);
+			List<Bracket> brackets = null;// Bracket.parseBracketsJSON(json["brackets"].AsArray);
+			List<string> liveMatches = null;
+			List<string> platformIds = Chompers.Chompers.parseStringArrayJSON(json["platformIds"].AsArray);
+			List<string> gameIds = Chompers.Chompers.parseStringArrayJSON(json["gameIds"].AsArray);
+
+			return new Tournament(json["id"], json["title"], json["description"], roles, json["queues"], rosters,
+				json["published"], breakpoints, brackets, liveMatches, json["startDate"], json["endDate"], platformIds,
+				json["leagueId"], gameIds, json["league"]);
+		}
 	}
 
-	public struct TournamentRoster {
-		public string Id { get; set; }
-		public string Name { get; set; }
-		public string TeamId { get; set; }
-		public string PlayerId { get; set; }
-
-	}
-
-	public struct TournamentBreakpoint {
-		public string Id { get; set; }
-		public string Name { get; set; }
-		public int Position { get; set; }
-		public List<TournamentBreakpointInput> Inputs { get; set; }
-		public TournamentBreakpointStanding Standings { get; set; }	
-	}
-
-	public struct TournamentBreakpointInput {
-		public string Roster { get; set; }
-		public string Bracket { get; set; }
-		public int Standing { get; set; }
-	}
-	
-	public struct TournamentBreakpointStanding {
-		public List<TournamentBreakpointStandingResult> Results { get; set; }
-		public long Timestamp { get; set; }
-	}
-
-	public struct TournamentBreakpointStandingResult {
-		public string Roster { get; set; }
-		public string Bracket { get; set; }
-		public int Standing { get; set; }
-	}	
-	
-	public struct TournamentBracket {
-		public string Id { get; set; }
-		public string Name { get; set; }
-		public int Position { get; set; }
-		public int GroupPosition { get; set; }
-		public string GroupName { get; set; }
-		public string State { get; set; }
-		
-		public TournamentBracketType BracketType { get; set; }
-		//public TournamentMatchType MatchType { get; set; }
-		//public TournamentGameMode GameMode { get; set; }
-		
-		public List<string> Input { get; set; }
-
-		public List<TournamentMatch> Matches { get; set; }
-		//public List<TournamentBracketStandings> Standings { get; set; }
-
-	}
 
 	public struct TournamentBracketType {
 		public string Indentifier { get; set; }

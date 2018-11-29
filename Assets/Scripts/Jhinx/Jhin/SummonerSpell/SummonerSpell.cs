@@ -60,8 +60,8 @@ namespace Jhinx.Jhin {
 			
 			// TODO: Fix below
 			List<List<float>> effect = new List<List<float>>();
-			foreach (JSONArray effectArray in json["effect"].AsArray) {
-				effect.Add(Chompers.Chompers.parseFloatArrayJSON(effectArray));
+			for (int i = 0; i < json["effect"].Count; i++) {
+				effect.Add(Chompers.Chompers.parseFloatArrayJSON((json["effect"].AsArray)[i].AsArray));
 			}
 			
 			List<Chompers.Chompers.Var> vars = new List<Chompers.Chompers.Var>();

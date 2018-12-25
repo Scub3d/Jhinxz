@@ -50,7 +50,7 @@ namespace Jhinxz.Zoe.Fantasy {
 				json["rosterTrendsDisabled"]);
 		}
 		
-		public static IEnumerator getLeague(string region, string language, int season) {
+		public static IEnumerator getFantasyStats(string region, string language, int season) {
 			using (UnityWebRequest www = UnityWebRequest.Get("https://fantasy." + region + ".lolesports.com/" + language + "/api/season/" + season)) {
 				yield return www.SendWebRequest();
 				if (www.isNetworkError || www.isHttpError) {

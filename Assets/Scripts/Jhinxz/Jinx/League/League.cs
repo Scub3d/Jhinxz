@@ -20,6 +20,13 @@ namespace Jhinxz.Jinx.League {
         public Dictionary<string, string> Names { get; set; }
         public List<string> Tournaments  { get; set; }
         
+        // The issue here is how much data do I return. If I return the tournament data along with the league data 
+        // I would need to make a seperate class for that and inside that I would make the requests
+        // I think that is the correct way to do things, but I would have to come up with a name for that class
+        // and I am not creative. So here we are
+        
+        // This also applies to most of the other classes in this namespace (Jinx).
+        
         public League(int id, string slug, string name, string guid, string region, int drupalId, string logoUrl, string createdAt, string updatedAt, Dictionary<string, string> abouts, Dictionary<string, string> names, List<string> tournaments) {
             Id = id;
             Slug = slug;
@@ -65,20 +72,20 @@ namespace Jhinxz.Jinx.League {
                 }
             }
         }
-        
-         /*
-         public static IEnumerator getLeague(System.Action<League> callback, int leagueId) {
-            using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/v1/leagues?id=" + leagueId)) {
-                yield return www.Send();
-                if (www.isNetworkError || www.isHttpError) {
-                    Debug.Log(www.error);
-                    callback(null);
-                } else {
-                    callback(parseLeagueJSON(JSON.Parse(www.downloadHandler.text)["leagues"][0]));                       
-                }
-            }
-        }         
-        */  
-       
     }
 }
+
+
+/*
+       public static IEnumerator getLeague(System.Action<League> callback, int leagueId) {
+          using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/v1/leagues?id=" + leagueId)) {
+              yield return www.Send();
+              if (www.isNetworkError || www.isHttpError) {
+                  Debug.Log(www.error);
+                  callback(null);
+              } else {
+                  callback(parseLeagueJSON(JSON.Parse(www.downloadHandler.text)["leagues"][0]));                       
+              }
+          }
+      }         
+*/  

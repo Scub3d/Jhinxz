@@ -43,8 +43,8 @@ namespace Jhinxz.Jinx {
 			return videos;
 		}
 
-		public static IEnumerator getVideos(string patchNumber, string languageCode) {
-			using (UnityWebRequest www = UnityWebRequest.Get("")) {
+		public static IEnumerator getVideos() {
+			using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/v2/videos")) {
 				yield return www.Send();
 				if (www.isNetworkError || www.isHttpError) {
 					Debug.Log(www.error);

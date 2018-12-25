@@ -120,19 +120,6 @@ namespace Jhinxz.Chompers {
 			}
 		}
 		
-		public static IEnumerator getStreamToken() {
-			using (UnityWebRequest www = UnityWebRequest.Get("https://api.lolesports.com/api/issueToken")) {
-				yield return www.Send();
-				if (www.isNetworkError || www.isHttpError) {
-					Debug.Log(www.error);
-					yield return null;
-				} else {
-					JSONNode tokenJSON = JSON.Parse(www.downloadHandler.text);
-					yield return tokenJSON["token"];
-				}
-			}
-		}
-		
 		public static string GenerateChampionSquareImageURL(string version, string championId) {
 			return DATA_DRAGON_BASE_URL + "/cdn/" + version + "/img/champion/" + championId + ".png";
 		}

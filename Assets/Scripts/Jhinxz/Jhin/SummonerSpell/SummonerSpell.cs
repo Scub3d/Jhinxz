@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
-namespace Jhinxz.Jhin {
+namespace Jhinxz.Jhin.SummonerSpell {
 	public class SummonerSpell {
 		public string Id { get; set; }
 		public string Name { get; set; }

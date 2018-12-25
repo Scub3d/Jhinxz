@@ -6,6 +6,9 @@ using UnityEngine.Networking;
 
 // ReSharper disable All
 
+
+// GameStats and GameTimeline maybe should go in their own namespaces. Even though no confilicts exist atm.
+// Would be good for being able to easily tell what classes belong to which of the two
 namespace Jhinxz.Jinx.Game {
 	public class GameStats {
 		public long Id { get; set; }

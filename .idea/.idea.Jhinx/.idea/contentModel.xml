@@ -9,9 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
           <e p="SimpleJSON.cs" t="Include" />
+          <e p="WebSocket.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Jhinx" t="Include">
+          <e p="Jhinxz" t="Include">
             <e p="Chompers" t="Include">
               <e p="Chompers.cs" t="Include" />
               <e p="CoroutineWithData.cs" t="Include" />
@@ -64,10 +65,16 @@
               <e p="SummonerSpell" t="Include">
                 <e p="SummonerSpell.cs" t="Include" />
               </e>
+              <e p="Test.cs" t="Include" />
             </e>
             <e p="Jinx" t="Include">
-              <e p="Actor" t="Include">
+              <e p="Article" t="Include">
                 <e p="Article.cs" t="Include" />
+                <e p="Category.cs" t="Include" />
+                <e p="Image.cs" t="Include" />
+                <e p="Media.cs" t="Include" />
+                <e p="Path.cs" t="Include" />
+                <e p="Variants.cs" t="Include" />
               </e>
               <e p="Game" t="Include">
                 <e p="Ban.cs" t="Include" />
@@ -118,6 +125,7 @@
               <e p="Team" t="Include">
                 <e p="Team.cs" t="Include" />
               </e>
+              <e p="Test.cs" t="Include" />
               <e p="Tournament" t="Include">
                 <e p="Bracket.cs" t="Include" />
                 <e p="BracketType.cs" t="Include" />
@@ -139,7 +147,10 @@
                 <e p="Video.cs" t="Include" />
               </e>
             </e>
-            <e p="Test.cs" t="Include" />
+            <e p="Willump" t="Include">
+              <e p="Stream.cs" t="Include" />
+              <e p="Test.cs" t="Include" />
+            </e>
             <e p="Zoe" t="Include">
               <e p="Fantasy" t="Include">
                 <e p="ActualPlayerStat.cs" t="Include" />
@@ -156,6 +167,7 @@
                 <e p="Stats.cs" t="Include" />
                 <e p="TrendByWeek.cs" t="Include" />
               </e>
+              <e p="Test.cs" t="Include" />
             </e>
           </e>
         </e>
